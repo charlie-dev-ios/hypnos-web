@@ -1,5 +1,5 @@
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { getTotalIngredientCount } from '@/lib/data/recipes';
+import { getTotalIngredientCount } from '@/lib/utils/recipe-utils';
 import type { Recipe } from '@/lib/schemas/recipe';
 import Image from 'next/image';
 
@@ -11,7 +11,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
   const totalIngredients = getTotalIngredientCount(recipe);
 
   return (
-    <Card className="hover:shadow-lg transition-shadow">
+    <Card className="hover:shadow-lg transition-shadow" role="article" aria-label={`料理: ${recipe.name}`}>
       <CardHeader>
         {recipe.imageUrl ? (
           <div className="relative w-full h-48 mb-4 rounded-md overflow-hidden bg-gray-100">

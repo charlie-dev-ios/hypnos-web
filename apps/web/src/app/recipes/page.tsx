@@ -1,5 +1,5 @@
 import { getAllRecipes } from '@/lib/data/recipes';
-import RecipeList from '@/components/recipes/recipe-list';
+import RecipesPageContent from '@/components/recipes/recipes-page-content';
 import Breadcrumb from '@/components/navigation/breadcrumb';
 import type { Metadata } from 'next';
 
@@ -17,9 +17,7 @@ export default async function RecipesPage() {
 
       <h1 className="text-4xl font-bold mb-8">料理一覧</h1>
 
-      <p className="text-gray-600 mb-6">全{recipes.length}種類の料理を掲載</p>
-
-      <RecipeList recipes={recipes} />
+      <RecipesPageContent initialRecipes={recipes} />
     </div>
   );
 }

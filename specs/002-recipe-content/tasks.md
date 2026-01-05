@@ -24,9 +24,9 @@
 
 **Purpose**: Project initialization and directory structure
 
-- [ ] T001 Create recipe-related directory structure (components/recipes/, content/recipes/, tests/)
-- [ ] T002 [P] Verify existing dependencies (Next.js 16.0.8, Bun 1.1.40, shadcn/ui, Zod)
-- [ ] T003 [P] Create sample recipe data file in apps/web/src/content/recipes/recipes.json with 10-15 recipes
+- [x] T001 Create recipe-related directory structure (components/recipes/, content/recipes/, tests/)
+- [x] T002 [P] Verify existing dependencies (Next.js 16.0.8, Bun 1.1.40, shadcn/ui, Zod)
+- [x] T003 [P] Create sample recipe data file in apps/web/src/content/recipes/recipes.json with 10-15 recipes
 
 ---
 
@@ -36,14 +36,14 @@
 
 **⚠️ CRITICAL**: No user story work can begin until this phase is complete
 
-- [ ] T004 Extend RecipeSchema to export RecipeType in apps/web/src/lib/schemas/recipe.ts
-- [ ] T005 [P] Unit test for getAllRecipes() in apps/web/tests/unit/lib/data/recipes.test.ts (Red - write test FIRST)
-- [ ] T006 [P] Unit test for getRecipeById() in apps/web/tests/unit/lib/data/recipes.test.ts (Red - write test FIRST)
-- [ ] T007 [P] Unit test for getTotalIngredientCount() in apps/web/tests/unit/lib/data/recipes.test.ts (Red - write test FIRST)
-- [ ] T008 Implement getAllRecipes() function in apps/web/src/lib/data/recipes.ts (Green - make tests pass)
-- [ ] T009 Implement getRecipeById() function in apps/web/src/lib/data/recipes.ts (Green - make tests pass)
-- [ ] T010 Implement getTotalIngredientCount() function in apps/web/src/lib/data/recipes.ts (Green - make tests pass)
-- [ ] T011 Verify all data layer unit tests pass (Refactor - optimize code)
+- [x] T004 Extend RecipeSchema to export RecipeType in apps/web/src/lib/schemas/recipe.ts
+- [x] T005 [P] Unit test for getAllRecipes() in apps/web/tests/unit/lib/data/recipes.test.ts (Red - write test FIRST)
+- [x] T006 [P] Unit test for getRecipeById() in apps/web/tests/unit/lib/data/recipes.test.ts (Red - write test FIRST)
+- [x] T007 [P] Unit test for getTotalIngredientCount() in apps/web/tests/unit/lib/data/recipes.test.ts (Red - write test FIRST)
+- [x] T008 Implement getAllRecipes() function in apps/web/src/lib/data/recipes.ts (Green - make tests pass)
+- [x] T009 Implement getRecipeById() function in apps/web/src/lib/data/recipes.ts (Green - make tests pass)
+- [x] T010 Implement getTotalIngredientCount() function in apps/web/src/lib/data/recipes.ts (Green - make tests pass)
+- [x] T011 Verify all data layer unit tests pass (Refactor - optimize code)
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -59,17 +59,17 @@
 
 > **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
 
-- [ ] T012 [P] [US1] Component test for RecipeCard rendering in apps/web/tests/unit/components/recipes/recipe-card.test.tsx
-- [ ] T013 [P] [US1] Component test for RecipeList rendering in apps/web/tests/unit/components/recipes/recipe-list.test.tsx
-- [ ] T014 [P] [US1] Component test for empty state in RecipeList in apps/web/tests/unit/components/recipes/recipe-list.test.tsx
+- [x] T012 [P] [US1] Component test for RecipeCard rendering in apps/web/tests/unit/components/recipes/recipe-card.test.tsx
+- [x] T013 [P] [US1] Component test for RecipeList rendering in apps/web/tests/unit/components/recipes/recipe-list.test.tsx
+- [x] T014 [P] [US1] Component test for empty state in RecipeList in apps/web/tests/unit/components/recipes/recipe-list.test.tsx
 
 ### Implementation for User Story 1 (Green Phase)
 
-- [ ] T015 [P] [US1] Create RecipeCard component in apps/web/src/components/recipes/recipe-card.tsx
-- [ ] T016 [P] [US1] Create RecipeList component in apps/web/src/components/recipes/recipe-list.tsx
-- [ ] T017 [US1] Update recipes page to fetch and display all recipes in apps/web/src/app/recipes/page.tsx
-- [ ] T018 [US1] Add metadata for SEO in apps/web/src/app/recipes/page.tsx
-- [ ] T019 [US1] Verify all US1 tests pass and refactor components
+- [x] T015 [P] [US1] Create RecipeCard component in apps/web/src/components/recipes/recipe-card.tsx
+- [x] T016 [P] [US1] Create RecipeList component in apps/web/src/components/recipes/recipe-list.tsx
+- [x] T017 [US1] Update recipes page to fetch and display all recipes in apps/web/src/app/recipes/page.tsx
+- [x] T018 [US1] Add metadata for SEO in apps/web/src/app/recipes/page.tsx
+- [x] T019 [US1] Verify all US1 tests pass and refactor components
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently. Build succeeds, all 10-15 recipes display in grid.
 
