@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git fetch:*)",
+      "Bash(git rev-parse:*)",
+      "Bash(ls:*)",
+      "Bash(mkdir:*)",
+      "Bash(cat:*)",
+      "Bash(find:*)",
+      "Bash(.specify/scripts/bash/**:*)",
+      "Bash(bun test:*)",
+      "Bash(bun run test:*)",
+      "Bash(bun build:*)",
+      "Bash(bun run build:*)",
+      "mcp__serena__*",
+      "Skill(speckit.*)"
+    ]
+  }
+}
