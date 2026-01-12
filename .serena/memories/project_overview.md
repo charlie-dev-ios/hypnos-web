@@ -1,56 +1,35 @@
-# hashibiroko プロジェクト概要
-
-## ⚠️ 重要: Constitution（開発原則）
-
-**すべての開発作業は `.specify/memory/constitution.md` に定義された原則に従う必要があります。**
-
-主要原則:
-- **Test-Driven Development (NON-NEGOTIABLE)**: テストを先に書く
-- **AI-First Development**: 機械可読なドキュメント構造
-- **Simplicity**: YAGNI原則の遵守
-
-詳細: `.specify/memory/constitution.md` を参照
+# Hashibiroko - プロジェクト概要
 
 ## プロジェクトの目的
+Pokemon Sleep攻略情報サイト（Web + モバイル）
 
-hashibiroko は **Web + モバイル** 向けのアプリケーションです。
-フロントエンド（Web）とバックエンド（API）は分離されており、APIはモバイルアプリと共通で使用します。
+## プロジェクトの性質
+- モノレポ構成（Turborepo管理）
+- フロントエンド・バックエンド分離アーキテクチャ
+- Edge-First戦略（Vercel、Cloudflare Workers）
+- AI-First開発（明確な仕様管理、機械可読なドキュメント）
 
-現在、ポケモンスリープ関連のWebサイトを構築中です。
+## 主要機能
+- ポケモン一覧・詳細ページ
+- 料理レシピ管理
+- 攻略戦略情報
+- 島情報
+- ゲームメカニクス解説
+- チーム編成機能
 
-## システム構成
-
-```
-┌─────────────────┐     ┌─────────────────┐
-│   Web (Next.js) │     │      Mobile     │
-│     Vercel      │     │                 │
-└────────┬────────┘     └────────┬────────┘
-         │                       │
-         └───────────┬───────────┘
-                     │
-                     ▼
-         ┌───────────────────────┐
-         │   API (Hono)          │
-         │  Cloudflare Workers   │
-         └───────────┬───────────┘
-                     │
-                     ▼
-         ┌───────────────────────┐
-         │   Database            │
-         │   Supabase (PostgreSQL)│
-         └───────────────────────┘
-```
-
-## 環境情報
-
-- **システム**: Darwin (macOS)
-- **パッケージマネージャー**: Bun 1.1.40
-- **モノレポ管理**: Turborepo 2.6.3
+## プロジェクト構成
+- `apps/web` - Next.js Webフロントエンド（実装中）
+- `apps/api` - Hono APIバックエンド（開発中）
+- `packages/shared` - 共通パッケージ（型定義・スキーマ、今後作成予定）
+- `specs/` - 機能仕様書（speckit管理）
+- `.specify/` - speckit設定、開発原則（constitution.md）
+- `.serena/` - Serena設定・メモリファイル
+- `.claude/` - Claude Code設定・カスタムコマンド
 
 ## 開発環境
+- Web: http://localhost:3030 (ポート3030)
+- API: http://localhost:8787 (ポート8787、予定)
 
-| 環境 | Web | API | 用途 |
-|------|-----|-----|------|
-| Development | localhost:3030 | localhost:8787 | ローカル開発 |
-| Staging | TBD | TBD | テスト環境 |
-| Production | Vercel | Cloudflare Workers | 本番 |
+## デプロイ環境
+- Web: Vercel
+- API: Cloudflare Workers

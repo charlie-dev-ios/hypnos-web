@@ -8,17 +8,14 @@
       "Bash(cat:*)",
       "Bash(find:*)",
       "Bash(.specify/scripts/bash/**:*)",
-      "Bash(bun test:*)",
       "Bash(bun run test:*)",
       "Bash(bun build:*)",
       "Bash(bun run build:*)",
-      "mcp__serena__*",
       "Skill(speckit.*)",
+      "Skill(speckit.tasks)",
       "Skill(speckit.specify)",
       "Bash(grep:*)",
-      "mcp__plugin_serena_serena__replace_content",
-      "mcp__plugin_serena_serena__activate_project",
-      "Skill(speckit.tasks)"
+      "mcp__plugin_serena_serena__*"
     ]
   }
 }

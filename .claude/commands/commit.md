@@ -1,6 +1,6 @@
 ---
 description: Constitution に従ってコミットを実行（対話的にファイル選択可能）
-allowed-tools: Bash(git:*), Bash(bun:*), Bash(bunx:*)
+allowed-tools: Bash(git:*), Bash(bun:*)
 ---
 
 # Constitution準拠コミット
@@ -31,7 +31,6 @@ allowed-tools: Bash(git:*), Bash(bun:*), Bash(bunx:*)
 ### 5. Constitution遵守でコミット
 
 特に以下を遵守：
-- **Test-Driven Development (NON-NEGOTIABLE)**: テストが通っていることを確認
 - **Git Commit規約**: Conventional Commits形式、日本語メッセージ
 - **Governance**: Constitution遵守の確認
 

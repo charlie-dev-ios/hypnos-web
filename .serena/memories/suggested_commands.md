@@ -1,92 +1,119 @@
-# 推奨コマンド
+# 開発コマンド
 
-## 開発コマンド
+## プロジェクトルート
 
-### セットアップ
-
+### 依存関係のインストール
 ```bash
-# 依存関係のインストール
 bun install
 ```
 
-### 開発サーバー起動
-
+### すべてのアプリの開発サーバー起動
 ```bash
-# すべてのアプリの開発サーバーを起動（Turborepo経由）
 bun dev
+```
 
-# Webアプリのみ起動する場合
+### すべてのアプリをビルド
+```bash
+bun build
+```
+
+## apps/web（Webフロントエンド）
+
+### カレントディレクトリを移動
+```bash
 cd apps/web
-bun dev  # localhost:3030で起動
+```
 
-# APIアプリのみ起動する場合
-cd apps/api
-bun dev  # localhost:8787で起動（予定）
+### 開発サーバー起動（ポート3030）
+```bash
+bun dev
 ```
 
 ### ビルド
-
 ```bash
-# すべてのアプリをビルド（Turborepo経由）
 bun build
-
-# Webアプリのみビルド
-cd apps/web
-bun run build
 ```
 
-### テスト
-
+### テスト実行
 ```bash
-# Webアプリのテストを実行（Vitest）
-cd apps/web
 bun run test
-
-# テストをwatchモードで実行
-cd apps/web
-bun run test --watch
 ```
 
-### Linting
-
+### テストをwatchモードで実行
 ```bash
-# Webアプリのlintを実行
-cd apps/web
-bunx eslint .
+bun run test:watch
+```
 
-# 自動修正
-cd apps/web
-bunx eslint . --fix
+## apps/api（APIバックエンド）※開発中
+
+### カレントディレクトリを移動
+```bash
+cd apps/api
+```
+
+### 開発サーバー起動（ポート8787予定）
+```bash
+bun dev
+```
+
+### ビルド
+```bash
+bun build
+```
+
+## Gitコマンド（Darwin/macOS対応）
+
+### ステータス確認
+```bash
+git status
+```
+
+### 変更の確認
+```bash
+git diff
+```
+
+### 変更をステージング
+```bash
+git add .
+```
+
+### コミット（Conventional Commits形式、日本語）
+```bash
+git commit -m "feat(scope): 説明"
+```
+
+### プッシュ
+```bash
+git push
 ```
 
 ## システムユーティリティコマンド（Darwin/macOS）
 
-- `ls` - ファイル・ディレクトリ一覧
-- `cd` - ディレクトリ移動
-- `git` - バージョン管理
-- `grep` - テキスト検索
-- `find` - ファイル検索
-
-## Git関連
-
+### ディレクトリ一覧
 ```bash
-# ステータス確認
-git status
-
-# ブランチ確認
-git branch
-
-# コミット
-git add .
-git commit -m "feat: 新機能を追加"
-
-# プッシュ
-git push origin <branch-name>
+ls -la
 ```
 
-## speckit（仕様管理ツール）
+### ファイル検索
+```bash
+find . -name "*.tsx"
+```
 
-プロジェクトはspeckitを使用して機能仕様を管理しています。
+### パターン検索
+```bash
+grep -r "pattern" .
+```
 
-- 仕様書: `specs/` ディレクトリ
-- ツール設定: `.specify/` ディレクトリ
+### カレントディレクトリ移動
+```bash
+cd <path>
+```
+
+## 開発ワークフロー
+
+1. ブランチ作成: `git checkout -b feature/xxx` or `git checkout -b fix/xxx`
+2. 開発サーバー起動: `bun dev` (ルート) or `cd apps/web && bun dev`
+3. テスト実行（TDD）: `cd apps/web && bun run test:watch`
+4. コミット: `git commit -m "feat(scope): 説明"`
+5. プッシュ: `git push`

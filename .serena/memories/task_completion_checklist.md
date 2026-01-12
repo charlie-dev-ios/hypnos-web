@@ -1,83 +1,81 @@
 # タスク完了時のチェックリスト
 
-## ⚠️ Constitution参照
+## 必須事項（NON-NEGOTIABLE）
 
-**タスク実行前に必ず `.specify/memory/constitution.md` を確認してください。**
+### 1. Test-Driven Development（TDD）の遵守
+- [ ] Red-Green-Refactorサイクルを実施
+- [ ] すべての新機能・変更にテストを作成
+- [ ] テストが通ることを確認
 
-このチェックリストは Constitution に基づいています。
-
-## Constitution（開発原則）遵守事項
-
-### I. Test-Driven Development（TDD）- **必須**
-
-タスク完了前に以下を確認：
-
-1. **テストを先に書いた**
-   - [ ] Red-Green-Refactor サイクルを遵守
-   - [ ] すべての新機能・変更にテストが存在する
-   - [ ] テストなしのコードはマージしない
-
-2. **テストが通っている**
-   ```bash
-   cd apps/web
-   bun test
-   ```
-
-### II. Simplicity（シンプルさ）
-
-- [ ] YAGNI原則を遵守（必要になるまで複雑さを追加しない）
-- [ ] 明確な理由なく抽象化していない
-- [ ] 不要なコードを削除した
-
-### III. コード品質
-
-1. **Linting**
-   ```bash
-   cd apps/web
-   bunx eslint .
-   ```
-   - [ ] Lintエラーがない
-
-2. **型チェック**
-   ```bash
-   cd apps/web
-   bunx tsc --noEmit
-   ```
-   - [ ] TypeScriptの型エラーがない
-
-3. **ビルド確認**
-   ```bash
-   cd apps/web
-   bun run build
-   ```
-   - [ ] ビルドが成功する
-
-### IV. Git Commit
-
-- [ ] Conventional Commitsに従っている
-- [ ] コミットメッセージが日本語で明確
-- [ ] 適切なtypeとscopeを使用
-
-### V. ドキュメント
-
-- [ ] 必要に応じてドキュメントを更新
-- [ ] CLAUDE.md の更新が必要な場合は更新
-- [ ] README.md の更新が必要な場合は更新
-
-## 実行順序
-
-タスク完了時は以下の順序で確認すること：
-
-1. テスト実行 → **全てパス**
-2. Lint実行 → **エラーなし**
-3. 型チェック → **エラーなし**
-4. ビルド → **成功**
-5. Gitコミット → **Conventional Commits遵守**
-
-## スクリプト例
-
+### 2. テストの実行
 ```bash
-# タスク完了前の一括チェック（Webアプリ）
 cd apps/web
-bun test && bunx eslint . && bunx tsc --noEmit && bun run build
+bun run test
+```
+- [ ] すべてのテストがパスすることを確認
+- [ ] テストカバレッジが適切であることを確認
+
+### 3. ビルドの確認
+```bash
+# プロジェクトルートから
+bun build
+
+# または個別アプリで
+cd apps/web
+bun build
+```
+- [ ] ビルドエラーがないことを確認
+- [ ] TypeScriptの型エラーがないことを確認
+
+### 4. コーディング規約の遵守
+- [ ] TypeScript strict modeに準拠
+- [ ] `any`型を使用していない（必要な場合はコメントで理由を説明）
+- [ ] 命名規則に従っている
+- [ ] Server Component優先の原則を守っている
+- [ ] すべてのPropsに型を明示している
+
+### 5. Git規約の遵守
+- [ ] Conventional Commits形式でコミットメッセージを作成
+- [ ] 日本語で記述
+- [ ] **重要**: Co-Authored-Byなどのフッターを含めない
+- [ ] 適切なtype（feat, fix, docs, test等）を使用
+- [ ] スコープを指定（可能な場合）
+
+## 推奨事項
+
+### コードレビュー（自己チェック）
+- [ ] コードの可読性は十分か
+- [ ] 過度な抽象化を避けているか（YAGNI原則）
+- [ ] 200行以内のコンポーネント分割を意識しているか
+- [ ] 再利用可能な部分は適切に分離しているか
+
+### ドキュメント
+- [ ] 必要に応じてコメントを追加（複雑なロジックの場合）
+- [ ] READMEやドキュメントの更新が必要な場合は更新
+
+### パフォーマンス
+- [ ] 不要なre-renderを避けているか
+- [ ] Server Componentを適切に活用しているか
+
+## タスク完了の最終確認
+
+### チェック項目すべてクリア
+- [ ] テストがすべてパス
+- [ ] ビルドが成功
+- [ ] コーディング規約を遵守
+- [ ] Git規約に従ったコミットメッセージ
+- [ ] 開発原則（Constitution）に準拠
+
+### 完了コマンド例
+```bash
+# テスト実行
+cd apps/web && bun run test
+
+# ビルド確認
+cd ../.. && bun build
+
+# Git操作
+git add .
+git commit -m "feat(pokemon): ポケモン詳細ページを追加"
+git push
 ```
