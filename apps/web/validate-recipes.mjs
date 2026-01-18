@@ -6,13 +6,13 @@ const RecipeTypeSchema = z.enum(['カレー', 'サラダ', 'デザート', 'ド�
 const RecipeSchema = z.object({
   id: z.number().int().positive(),
   name: z.string().min(1),
-  type: RecipeTypeSchema,
-  power: z.number().positive(),
+  type: RecipeTypeSchema.optional(),
+  ingredientCount: z.number().int().nonnegative(),
+  energy: z.number().nonnegative(),
   ingredients: z.array(z.object({
     name: z.string(),
     quantity: z.number().int().positive(),
   })),
-  effect: z.string(),
   imageUrl: z.string().optional(),
 });
 

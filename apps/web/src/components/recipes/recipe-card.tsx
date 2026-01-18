@@ -11,7 +11,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
   const totalIngredients = getTotalIngredientCount(recipe);
 
   return (
-    <Card className="hover:shadow-lg transition-shadow" role="article" aria-label={`料理: ${recipe.name}`}>
+    <Card className="hover:shadow-lg transition-shadow" role="article" aria-label={`料理: ${recipe.name}`} data-testid="recipe-card">
       <CardHeader>
         {recipe.imageUrl ? (
           <div className="relative w-full h-48 mb-4 rounded-md overflow-hidden bg-gray-100">
@@ -36,7 +36,7 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
           {/* エナジー */}
           <div className="flex justify-between items-center">
             <span className="text-sm font-medium text-gray-600">エナジー</span>
-            <span className="text-lg font-bold text-blue-600">{recipe.power}</span>
+            <span className="text-lg font-bold text-blue-600">{recipe.energy.toLocaleString()}</span>
           </div>
 
           {/* 必要食材の列挙 */}
@@ -56,11 +56,6 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
           <div className="flex justify-between items-center pt-2 border-t">
             <span className="text-sm font-medium text-gray-600">必要食材の総数</span>
             <span className="text-base font-semibold">{totalIngredients}個</span>
-          </div>
-
-          {/* 効果 */}
-          <div className="pt-2">
-            <p className="text-xs text-gray-500">{recipe.effect}</p>
           </div>
         </div>
       </CardContent>
