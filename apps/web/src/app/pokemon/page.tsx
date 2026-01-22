@@ -4,7 +4,9 @@ import { useEffect, useState } from "react";
 import LoadingIndicator from "@/components/common/loading-indicator";
 import Breadcrumb from "@/components/navigation/breadcrumb";
 import PokemonList from "@/components/pokemon/pokemon-list";
-import PokemonSearch, { type SearchFilters } from "@/components/pokemon/pokemon-search";
+import PokemonSearch, {
+  type SearchFilters,
+} from "@/components/pokemon/pokemon-search";
 import { searchPokemon } from "@/lib/data/search";
 import type { Pokemon } from "@/lib/schemas/pokemon";
 
@@ -45,7 +47,9 @@ export default function PokemonPage() {
     <div className="container mx-auto px-4 py-6 sm:py-8">
       <Breadcrumb items={[{ label: "ポケモン図鑑" }]} />
 
-      <h1 className="mb-6 text-3xl font-bold sm:mb-8 sm:text-4xl">ポケモン図鑑</h1>
+      <h1 className="mb-6 text-3xl font-bold sm:mb-8 sm:text-4xl">
+        ポケモン図鑑
+      </h1>
 
       <div className="space-y-8">
         <PokemonSearch onSearch={handleSearch} />

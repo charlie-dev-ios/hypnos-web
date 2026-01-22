@@ -89,26 +89,37 @@ describe("searchPokemon", () => {
   });
 
   it("should sort by name ascending", () => {
-    const result = searchPokemon(mockPokemon, { sortBy: "name", sortOrder: "asc" });
+    const result = searchPokemon(mockPokemon, {
+      sortBy: "name",
+      sortOrder: "asc",
+    });
     expect(result[0].name).toBe("イーブイ");
     expect(result[result.length - 1].name).toBe("ピカチュウ");
   });
 
   it("should sort by name descending", () => {
-    const result = searchPokemon(mockPokemon, { sortBy: "name", sortOrder: "desc" });
+    const result = searchPokemon(mockPokemon, {
+      sortBy: "name",
+      sortOrder: "desc",
+    });
     expect(result[0].name).toBe("ピカチュウ");
     expect(result[result.length - 1].name).toBe("イーブイ");
   });
 
   it("should sort by id", () => {
-    const result = searchPokemon(mockPokemon, { sortBy: "id", sortOrder: "asc" });
+    const result = searchPokemon(mockPokemon, {
+      sortBy: "id",
+      sortOrder: "asc",
+    });
     expect(result[0].id).toBe(1);
     expect(result[1].id).toBe(2);
     expect(result[2].id).toBe(3);
   });
 
   it("should handle empty results", () => {
-    const result = searchPokemon(mockPokemon, { keyword: "存在しないポケモン" });
+    const result = searchPokemon(mockPokemon, {
+      keyword: "存在しないポケモン",
+    });
     expect(result).toHaveLength(0);
   });
 });

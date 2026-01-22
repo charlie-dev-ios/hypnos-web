@@ -127,7 +127,10 @@ export default function PokemonSearch({ onSearch }: PokemonSearchProps) {
           <label htmlFor="sortOrder" className="block text-sm font-medium mb-2">
             順序
           </label>
-          <Select value={sortOrder} onValueChange={(v) => setSortOrder(v as "asc" | "desc")}>
+          <Select
+            value={sortOrder}
+            onValueChange={(v) => setSortOrder(v as "asc" | "desc")}
+          >
             <SelectTrigger id="sortOrder">
               <SelectValue />
             </SelectTrigger>

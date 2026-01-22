@@ -8,7 +8,11 @@ export interface SearchBarProps {
   onChange: (value: string) => void;
 }
 
-export default function SearchBar({ placeholder = "検索...", value, onChange }: SearchBarProps) {
+export default function SearchBar({
+  placeholder = "検索...",
+  value,
+  onChange,
+}: SearchBarProps) {
   return (
     <div className="w-full">
       <Input

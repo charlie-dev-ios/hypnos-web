@@ -7,6 +7,9 @@ export async function GET() {
     return NextResponse.json(pokemon);
   } catch (error) {
     console.error("Error fetching pokemon:", error);
-    return NextResponse.json({ error: "Failed to fetch pokemon" }, { status: 500 });
+    return NextResponse.json(
+      { error: "Failed to fetch pokemon" },
+      { status: 500 },
+    );
   }
 }

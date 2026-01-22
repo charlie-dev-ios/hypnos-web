@@ -33,7 +33,9 @@ describe("MobileNav", () => {
     const pokemonLink = screen.getByRole("link", { name: /ポケモン図鑑/i });
     expect(pokemonLink).toHaveAttribute("href", "/pokemon");
 
-    const mechanicsLink = screen.getByRole("link", { name: /ゲームメカニクス/i });
+    const mechanicsLink = screen.getByRole("link", {
+      name: /ゲームメカニクス/i,
+    });
     expect(mechanicsLink).toHaveAttribute("href", "/mechanics");
   });
 });

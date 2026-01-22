@@ -1,6 +1,11 @@
 import { z } from "zod";
 
-export const RecipeTypeSchema = z.enum(["カレー", "サラダ", "デザート", "ドリンク"]);
+export const RecipeTypeSchema = z.enum([
+  "カレー",
+  "サラダ",
+  "デザート",
+  "ドリンク",
+]);
 
 export const RecipeSchema = z
   .object({

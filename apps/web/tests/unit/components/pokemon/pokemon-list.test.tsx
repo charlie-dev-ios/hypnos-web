@@ -49,7 +49,9 @@ describe("PokemonList", () => {
   it("should render empty message when no pokemon", () => {
     render(<PokemonList pokemon={[]} />);
 
-    expect(screen.getByText(/ポケモンが見つかりませんでした/)).toBeInTheDocument();
+    expect(
+      screen.getByText(/ポケモンが見つかりませんでした/),
+    ).toBeInTheDocument();
   });
 
   it("should render pokemon in grid layout", () => {

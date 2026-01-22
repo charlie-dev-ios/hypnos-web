@@ -144,7 +144,10 @@ describe("Recipe Data API", () => {
 
     it("should filter recipes containing multiple ingredients (AND condition)", async () => {
       const recipes = await getAllRecipes();
-      const filtered = filterRecipesByIngredients(recipes, ["あまいミツ", "マメミート"]);
+      const filtered = filterRecipesByIngredients(recipes, [
+        "あまいミツ",
+        "マメミート",
+      ]);
 
       expect(filtered.length).toBeGreaterThan(0);
       filtered.forEach((recipe) => {

@@ -5,7 +5,9 @@ test.describe("ホームページ", () => {
     await page.goto("/");
 
     await expect(page).toHaveTitle(/ポケモンスリープ攻略/);
-    await expect(page.locator("h1")).toContainText("ポケモンスリープ攻略サイト");
+    await expect(page.locator("h1")).toContainText(
+      "ポケモンスリープ攻略サイト",
+    );
   });
 
   test("ナビゲーションメニューが表示される", async ({ page }) => {

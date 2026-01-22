@@ -1,5 +1,10 @@
 import Link from "next/link";
-import { Card, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 const contentSections = [
   {
@@ -41,8 +46,12 @@ export default function TopNav() {
         <Link key={section.href} href={section.href}>
           <Card className="h-full transition-colors hover:bg-accent">
             <CardHeader>
-              <CardTitle className="text-lg sm:text-xl">{section.title}</CardTitle>
-              <CardDescription className="text-sm">{section.description}</CardDescription>
+              <CardTitle className="text-lg sm:text-xl">
+                {section.title}
+              </CardTitle>
+              <CardDescription className="text-sm">
+                {section.description}
+              </CardDescription>
             </CardHeader>
           </Card>
         </Link>

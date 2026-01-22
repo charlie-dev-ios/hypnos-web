@@ -7,7 +7,10 @@ export interface PokemonDetailProps {
   evolutionChain?: Pokemon[];
 }
 
-export default function PokemonDetail({ pokemon, evolutionChain = [] }: PokemonDetailProps) {
+export default function PokemonDetail({
+  pokemon,
+  evolutionChain = [],
+}: PokemonDetailProps) {
   return (
     <div className="space-y-6">
       {/* Basic Info */}
@@ -15,7 +18,9 @@ export default function PokemonDetail({ pokemon, evolutionChain = [] }: PokemonD
         <CardHeader>
           <CardTitle className="text-3xl">
             {pokemon.name}
-            <span className="ml-4 text-xl font-normal text-muted-foreground">No.{pokemon.id}</span>
+            <span className="ml-4 text-xl font-normal text-muted-foreground">
+              No.{pokemon.id}
+            </span>
           </CardTitle>
         </CardHeader>
         <CardContent className="space-y-4">

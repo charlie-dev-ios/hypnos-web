@@ -14,7 +14,10 @@ export interface SearchOptions {
  * @param options - Search options (keyword, filters, sort)
  * @returns Filtered and sorted array of pokemon
  */
-export function searchPokemon(pokemon: Pokemon[], options: SearchOptions): Pokemon[] {
+export function searchPokemon(
+  pokemon: Pokemon[],
+  options: SearchOptions,
+): Pokemon[] {
   let results = [...pokemon];
 
   // Filter by keyword (search in name)

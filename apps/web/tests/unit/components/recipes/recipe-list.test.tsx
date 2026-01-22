@@ -69,13 +69,17 @@ describe("RecipeList", () => {
   it("should show empty state message when no recipes", () => {
     render(<RecipeList recipes={[]} />);
 
-    expect(screen.getByText("該当する料理が見つかりません")).toBeInTheDocument();
+    expect(
+      screen.getByText("該当する料理が見つかりません"),
+    ).toBeInTheDocument();
   });
 
   it("should not show recipe cards when empty", () => {
     render(<RecipeList recipes={[]} />);
 
-    expect(screen.queryByText("とくせんリンゴジュース")).not.toBeInTheDocument();
+    expect(
+      screen.queryByText("とくせんリンゴジュース"),
+    ).not.toBeInTheDocument();
   });
 
   it("should render grid layout with correct classes", () => {

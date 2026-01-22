@@ -1,5 +1,11 @@
 import Image from "next/image";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import type { Recipe } from "@/lib/schemas/recipe";
 import { getTotalIngredientCount } from "@/lib/utils/recipe-utils";
 
@@ -51,7 +57,10 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
             <p className="text-sm font-medium text-gray-600 mb-2">必要食材</p>
             <ul className="space-y-1">
               {recipe.ingredients.map((ingredient, index) => (
-                <li key={index} className="text-sm text-gray-700 flex justify-between">
+                <li
+                  key={index}
+                  className="text-sm text-gray-700 flex justify-between"
+                >
                   <span>{ingredient.name}</span>
                   <span className="text-gray-500">{ingredient.quantity}個</span>
                 </li>
@@ -61,8 +70,12 @@ export default function RecipeCard({ recipe }: RecipeCardProps) {
 
           {/* 必要食材の総数 */}
           <div className="flex justify-between items-center pt-2 border-t">
-            <span className="text-sm font-medium text-gray-600">必要食材の総数</span>
-            <span className="text-base font-semibold">{totalIngredients}個</span>
+            <span className="text-sm font-medium text-gray-600">
+              必要食材の総数
+            </span>
+            <span className="text-base font-semibold">
+              {totalIngredients}個
+            </span>
           </div>
 
           {/* 効果 (存在する場合のみ表示) */}

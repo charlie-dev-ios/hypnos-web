@@ -20,7 +20,9 @@ describe("TopNav", () => {
     const pokemonLink = screen.getByRole("link", { name: /ポケモン図鑑/i });
     expect(pokemonLink).toHaveAttribute("href", "/pokemon");
 
-    const mechanicsLink = screen.getByRole("link", { name: /ゲームメカニクス/i });
+    const mechanicsLink = screen.getByRole("link", {
+      name: /ゲームメカニクス/i,
+    });
     expect(mechanicsLink).toHaveAttribute("href", "/mechanics");
 
     const strategiesLink = screen.getByRole("link", { name: /睡眠戦略/i });
@@ -40,6 +42,8 @@ describe("TopNav", () => {
     render(<TopNav />);
 
     expect(screen.getByText(/ポケモンの詳細情報を検索/i)).toBeInTheDocument();
-    expect(screen.getByText(/睡眠タイプやゲームシステムの解説/i)).toBeInTheDocument();
+    expect(
+      screen.getByText(/睡眠タイプやゲームシステムの解説/i),
+    ).toBeInTheDocument();
   });
 });

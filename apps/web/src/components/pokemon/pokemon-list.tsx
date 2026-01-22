@@ -8,7 +8,9 @@ export interface PokemonListProps {
 export default function PokemonList({ pokemon }: PokemonListProps) {
   if (pokemon.length === 0) {
     return (
-      <div className="text-center py-12 text-muted-foreground">ポケモンが見つかりませんでした</div>
+      <div className="text-center py-12 text-muted-foreground">
+        ポケモンが見つかりませんでした
+      </div>
     );
   }
 

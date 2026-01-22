@@ -71,7 +71,9 @@ export default function MobileNav() {
                   onClick={() => setOpen(false)}
                 >
                   <div className="font-medium">{link.title}</div>
-                  <div className="text-sm text-muted-foreground">{link.description}</div>
+                  <div className="text-sm text-muted-foreground">
+                    {link.description}
+                  </div>
                 </Link>
               </li>
             ))}

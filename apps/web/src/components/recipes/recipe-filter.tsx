@@ -47,7 +47,11 @@ export default function RecipeFilter({
         <h3 className="text-sm font-semibold mb-2" id="type-filter-label">
           料理種別
         </h3>
-        <div className="flex flex-wrap gap-2" role="group" aria-labelledby="type-filter-label">
+        <div
+          className="flex flex-wrap gap-2"
+          role="group"
+          aria-labelledby="type-filter-label"
+        >
           <Button
             variant={selectedType === null ? "default" : "outline"}
             onClick={() => onTypeChange(null)}
@@ -85,7 +89,11 @@ export default function RecipeFilter({
             className="text-xs"
             aria-expanded={showIngredients}
             aria-controls="ingredient-list"
-            aria-label={showIngredients ? "食材フィルターを閉じる" : "食材フィルターを開く"}
+            aria-label={
+              showIngredients
+                ? "食材フィルターを閉じる"
+                : "食材フィルターを開く"
+            }
           >
             {showIngredients ? "閉じる" : "開く"}
           </Button>
@@ -106,7 +114,10 @@ export default function RecipeFilter({
                     checked={selectedIngredients.includes(ingredient)}
                     onCheckedChange={() => handleIngredientToggle(ingredient)}
                   />
-                  <label htmlFor={`ingredient-${ingredient}`} className="text-sm cursor-pointer">
+                  <label
+                    htmlFor={`ingredient-${ingredient}`}
+                    className="text-sm cursor-pointer"
+                  >
                     {ingredient}
                   </label>
                 </div>
@@ -127,7 +138,8 @@ export default function RecipeFilter({
 
         {selectedIngredients.length > 0 && (
           <div className="mt-2 text-sm text-gray-600">
-            選択中: {selectedIngredients.join(", ")} ({selectedIngredients.length}個)
+            選択中: {selectedIngredients.join(", ")} (
+            {selectedIngredients.length}個)
           </div>
         )}
       </div>

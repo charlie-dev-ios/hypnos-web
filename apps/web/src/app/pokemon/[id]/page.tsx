@@ -4,7 +4,11 @@ import { Suspense } from "react";
 import LoadingIndicator from "@/components/common/loading-indicator";
 import Breadcrumb from "@/components/navigation/breadcrumb";
 import PokemonDetail from "@/components/pokemon/pokemon-detail";
-import { getAllPokemon, getEvolutionChain, getPokemonById } from "@/lib/data/pokemon";
+import {
+  getAllPokemon,
+  getEvolutionChain,
+  getPokemonById,
+} from "@/lib/data/pokemon";
 
 interface PokemonDetailPageProps {
   params: Promise<{
@@ -12,7 +16,9 @@ interface PokemonDetailPageProps {
   }>;
 }
 
-export async function generateMetadata({ params }: PokemonDetailPageProps): Promise<Metadata> {
+export async function generateMetadata({
+  params,
+}: PokemonDetailPageProps): Promise<Metadata> {
   const { id } = await params;
   const pokemonId = Number.parseInt(id, 10);
   const pokemon = await getPokemonById(pokemonId);
@@ -37,7 +43,9 @@ export async function generateStaticParams() {
   }));
 }
 
-export default async function PokemonDetailPage({ params }: PokemonDetailPageProps) {
+export default async function PokemonDetailPage({
+  params,
+}: PokemonDetailPageProps) {
   const { id } = await params;
   const pokemonId = Number.parseInt(id, 10);
 
@@ -55,7 +63,12 @@ export default async function PokemonDetailPage({ params }: PokemonDetailPagePro
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "ポケモン図鑑", href: "/pokemon" }, { label: pokemon.name }]} />
+      <Breadcrumb
+        items={[
+          { label: "ポケモン図鑑", href: "/pokemon" },
+          { label: pokemon.name },
+        ]}
+      />
 
       <Suspense fallback={<LoadingIndicator />}>
         <PokemonDetail pokemon={pokemon} evolutionChain={evolutionChain} />

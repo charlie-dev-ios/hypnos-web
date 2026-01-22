@@ -20,7 +20,9 @@ export default async function TeamsPage() {
               <article key={item.slug} className="space-y-4">
                 <h2 className="text-3xl font-semibold">{item.title}</h2>
                 {item.description && (
-                  <p className="text-lg text-muted-foreground">{item.description}</p>
+                  <p className="text-lg text-muted-foreground">
+                    {item.description}
+                  </p>
                 )}
                 <MarkdownContent content={item.content} />
               </article>

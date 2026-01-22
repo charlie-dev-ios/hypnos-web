@@ -69,7 +69,9 @@ export async function getContentBySlug(slug: string): Promise<Content | null> {
  * @param category - Content category
  * @returns Promise<Content[]> - Array of content in category
  */
-export async function getContentByCategory(category: string): Promise<Content[]> {
+export async function getContentByCategory(
+  category: string,
+): Promise<Content[]> {
   const allContent = await getAllContent();
   return allContent.filter((c) => c.category === category);
 }

@@ -2,7 +2,10 @@
 
 import { useMemo, useState } from "react";
 import type { Recipe, RecipeType } from "@/lib/schemas/recipe";
-import { extractIngredients, filterRecipesByIngredients } from "@/lib/utils/recipe-utils";
+import {
+  extractIngredients,
+  filterRecipesByIngredients,
+} from "@/lib/utils/recipe-utils";
 import RecipeFilter from "./recipe-filter";
 import RecipeList from "./recipe-list";
 
@@ -10,7 +13,9 @@ interface RecipesPageContentProps {
   initialRecipes: Recipe[];
 }
 
-export default function RecipesPageContent({ initialRecipes }: RecipesPageContentProps) {
+export default function RecipesPageContent({
+  initialRecipes,
+}: RecipesPageContentProps) {
   const [selectedType, setSelectedType] = useState<RecipeType | null>(null);
   const [selectedIngredients, setSelectedIngredients] = useState<string[]>([]);
 
@@ -41,7 +46,9 @@ export default function RecipesPageContent({ initialRecipes }: RecipesPageConten
       <p className="text-gray-600 mb-6">
         全{initialRecipes.length}種類の料理を掲載
         {filteredRecipes.length < initialRecipes.length && (
-          <span className="ml-2 text-sm">（{filteredRecipes.length}件表示中）</span>
+          <span className="ml-2 text-sm">
+            （{filteredRecipes.length}件表示中）
+          </span>
         )}
       </p>
 

@@ -1,5 +1,11 @@
 import Link from "next/link";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 import type { Pokemon } from "@/lib/schemas/pokemon";
 
 export interface PokemonCardProps {
@@ -13,7 +19,9 @@ export default function PokemonCard({ pokemon }: PokemonCardProps) {
         <CardHeader>
           <CardTitle className="flex items-center justify-between">
             {pokemon.name}
-            <span className="text-sm font-normal text-muted-foreground">No.{pokemon.id}</span>
+            <span className="text-sm font-normal text-muted-foreground">
+              No.{pokemon.id}
+            </span>
           </CardTitle>
           <CardDescription>
             {pokemon.sleepType} | {pokemon.specialty}

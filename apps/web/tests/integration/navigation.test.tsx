@@ -26,7 +26,9 @@ describe("Navigation Integration Tests", () => {
     it("should render the top page with all navigation cards", () => {
       render(<HomePage />);
 
-      expect(screen.getByText("ポケモンスリープ攻略サイト")).toBeInTheDocument();
+      expect(
+        screen.getByText("ポケモンスリープ攻略サイト"),
+      ).toBeInTheDocument();
       expect(screen.getByText("ポケモン図鑑")).toBeInTheDocument();
       expect(screen.getByText("ゲームメカニクス")).toBeInTheDocument();
       expect(screen.getByText("睡眠戦略")).toBeInTheDocument();
@@ -41,7 +43,9 @@ describe("Navigation Integration Tests", () => {
       const pokemonLink = screen.getByRole("link", { name: /ポケモン図鑑/i });
       expect(pokemonLink).toHaveAttribute("href", "/pokemon");
 
-      const mechanicsLink = screen.getByRole("link", { name: /ゲームメカニクス/i });
+      const mechanicsLink = screen.getByRole("link", {
+        name: /ゲームメカニクス/i,
+      });
       expect(mechanicsLink).toHaveAttribute("href", "/mechanics");
 
       const strategiesLink = screen.getByRole("link", { name: /睡眠戦略/i });
@@ -66,7 +70,9 @@ describe("Navigation Integration Tests", () => {
       expect(
         screen.getByRole("heading", { name: "ゲームメカニクス", level: 1 }),
       ).toBeInTheDocument();
-      expect(screen.getByRole("navigation", { name: "パンくずリスト" })).toBeInTheDocument();
+      expect(
+        screen.getByRole("navigation", { name: "パンくずリスト" }),
+      ).toBeInTheDocument();
       expect(screen.getByText("ホーム")).toBeInTheDocument();
     });
 
@@ -74,8 +80,12 @@ describe("Navigation Integration Tests", () => {
       const page = await StrategiesPage();
       render(page);
 
-      expect(screen.getByRole("heading", { name: "睡眠戦略", level: 1 })).toBeInTheDocument();
-      expect(screen.getByRole("navigation", { name: "パンくずリスト" })).toBeInTheDocument();
+      expect(
+        screen.getByRole("heading", { name: "睡眠戦略", level: 1 }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole("navigation", { name: "パンくずリスト" }),
+      ).toBeInTheDocument();
       expect(screen.getByText("ホーム")).toBeInTheDocument();
     });
 
@@ -83,8 +93,12 @@ describe("Navigation Integration Tests", () => {
       const page = await TeamsPage();
       render(page);
 
-      expect(screen.getByRole("heading", { name: "チーム編成", level: 1 })).toBeInTheDocument();
-      expect(screen.getByRole("navigation", { name: "パンくずリスト" })).toBeInTheDocument();
+      expect(
+        screen.getByRole("heading", { name: "チーム編成", level: 1 }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole("navigation", { name: "パンくずリスト" }),
+      ).toBeInTheDocument();
       expect(screen.getByText("ホーム")).toBeInTheDocument();
     });
 
@@ -92,15 +106,21 @@ describe("Navigation Integration Tests", () => {
       const page = await RecipesPage();
       render(page);
 
-      expect(screen.getByRole("heading", { name: "料理一覧", level: 1 })).toBeInTheDocument();
-      expect(screen.getByRole("navigation", { name: "パンくずリスト" })).toBeInTheDocument();
+      expect(
+        screen.getByRole("heading", { name: "料理一覧", level: 1 }),
+      ).toBeInTheDocument();
+      expect(
+        screen.getByRole("navigation", { name: "パンくずリスト" }),
+      ).toBeInTheDocument();
       expect(screen.getByText("ホーム")).toBeInTheDocument();
     });
 
     it("should render Islands page with placeholder", () => {
       render(<IslandsPage />);
 
-      expect(screen.getByRole("heading", { name: "島ガイド", level: 1 })).toBeInTheDocument();
+      expect(
+        screen.getByRole("heading", { name: "島ガイド", level: 1 }),
+      ).toBeInTheDocument();
       expect(screen.getByText(/コンテンツは準備中です/i)).toBeInTheDocument();
     });
   });

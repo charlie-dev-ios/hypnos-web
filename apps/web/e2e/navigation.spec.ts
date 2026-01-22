@@ -49,8 +49,13 @@ test.describe("レスポンシブデザイン", () => {
   ];
 
   for (const viewport of viewports) {
-    test(`${viewport.name}でホームページが正しく表示される`, async ({ page }) => {
-      await page.setViewportSize({ width: viewport.width, height: viewport.height });
+    test(`${viewport.name}でホームページが正しく表示される`, async ({
+      page,
+    }) => {
+      await page.setViewportSize({
+        width: viewport.width,
+        height: viewport.height,
+      });
       await page.goto("/");
 
       await expect(page.locator("h1")).toBeVisible();
