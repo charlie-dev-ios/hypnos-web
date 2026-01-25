@@ -57,7 +57,7 @@
 |----------|------|-----------|------|
 | パッケージマネージャー | Bun | 1.1.40 | 高速・TypeScript対応 |
 | モノレポ管理 | Turborepo | 2.6.3 | ビルドキャッシュ |
-| Linter/Formatter | Biome | - | 今後導入予定 |
+| Linter/Formatter | Biome | 2.3.11 | 高速・一元化 |
 
 ---
 
@@ -394,6 +394,16 @@ bun dev
 
 # すべてのアプリをビルド
 bun build
+
+# コード品質チェック・修正（Biome）
+bun format        # フォーマット実行
+bun lint          # Lint実行
+bun check         # フォーマット+Lint実行
+
+# CI用チェック（変更なし）
+bun format:check  # フォーマットチェックのみ
+bun lint:check    # Lintチェックのみ
+bun check:ci      # CI用チェック
 ```
 
 ### apps/web（Webフロントエンド）
