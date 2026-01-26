@@ -36,6 +36,9 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
   return (
     <Sidebar {...props}>
       <SidebarHeader>
+        <div className="flex items-center gap-2 px-2 py-1">
+          <span className="font-semibold">Hashibiroko</span>
+        </div>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>
