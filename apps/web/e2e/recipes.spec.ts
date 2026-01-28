@@ -21,7 +21,7 @@ test.describe("料理一覧ページ", () => {
 
   test("料理タイプでフィルタリングできる", async ({ page }) => {
     // フィルターセクションを確認
-    const filterSection = page.getByText("料理種別");
+    const filterSection = page.getByRole("heading", { name: "料理種別" });
     await expect(filterSection).toBeVisible();
 
     // カレー・シチューでフィルタ
