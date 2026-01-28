@@ -6,7 +6,8 @@
     "useIgnoreFile": true
   },
   "files": {
-    "ignoreUnknown": false
+    "ignoreUnknown": true,
+    "includes": ["**", "!!**/.grit", "!apps/web/coverage"]
   },
   "formatter": {
     "enabled": true,
@@ -45,15 +46,13 @@
   },
   "javascript": {
     "formatter": {
-      "indentStyle": "space",
       "quoteStyle": "double",
       "trailingCommas": "all"
     }
   },
   "json": {
     "formatter": {
-      "enabled": true,
-      "indentStyle": "space"
+      "enabled": true
     }
   },
   "css": {
@@ -62,9 +61,7 @@
       "tailwindDirectives": true
     },
     "formatter": {
-      "enabled": true,
-      "indentStyle": "space",
-      "lineWidth": 80
+      "enabled": true
     },
     "linter": {
       "enabled": true

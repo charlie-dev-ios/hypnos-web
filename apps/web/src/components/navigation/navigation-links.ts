@@ -1,5 +1,13 @@
 import type { LucideIcon } from "lucide-react";
-import { Cat, ChefHat, Home, Map, Moon, Settings, Users } from "lucide-react";
+import {
+  Cat,
+  ChefHat,
+  Home,
+  Map as MapIcon,
+  Moon,
+  Settings,
+  Users,
+} from "lucide-react";
 
 export interface NavigationLink {
   /** 表示ラベル */
@@ -35,7 +43,7 @@ export const navigationLinks: NavigationLink[] = [
     title: "島ガイド",
     href: "/islands",
     description: "各フィールドの特徴とポケモン出現情報",
-    icon: Map,
+    icon: MapIcon,
   },
   {
     title: "睡眠戦略",
