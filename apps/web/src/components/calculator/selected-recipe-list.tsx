@@ -58,7 +58,7 @@ export default function SelectedRecipeList({
           選択中のレシピ ({items.length}件)
         </CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="overflow-hidden">
         <ul className="space-y-3" aria-label="選択中のレシピ一覧">
           {items.map(({ recipe, quantity }) => (
             <li
@@ -69,7 +69,7 @@ export default function SelectedRecipeList({
                 <p className="text-sm font-medium truncate">{recipe.name}</p>
                 <p className="text-xs text-gray-500">{recipe.type}</p>
               </div>
-              <div className="flex items-center gap-1">
+              <div className="flex items-center gap-1 flex-shrink-0">
                 <Button
                   variant="outline"
                   size="icon"
