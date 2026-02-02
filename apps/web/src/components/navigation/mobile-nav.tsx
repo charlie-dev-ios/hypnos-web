@@ -12,42 +12,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
-const navigationLinks = [
-  {
-    title: "ポケモン図鑑",
-    href: "/pokemon",
-    description: "ポケモンの詳細情報を検索・閲覧",
-  },
-  {
-    title: "ゲームメカニクス",
-    href: "/mechanics",
-    description: "睡眠タイプやゲームシステムの解説",
-  },
-  {
-    title: "睡眠戦略",
-    href: "/strategies",
-    description: "効率的な睡眠計測と攻略のコツ",
-  },
-  {
-    title: "チーム編成",
-    href: "/teams",
-    description: "最適なポケモンチーム編成ガイド",
-  },
-  {
-    title: "料理情報",
-    href: "/recipes",
-    description: "レシピときのみの詳細データ",
-  },
-  {
-    title: "島ガイド",
-    href: "/islands",
-    description: "各フィールドの特徴とポケモン出現情報",
-  },
-];
+import { navigationLinks } from "./navigation-links";
 
 export default function MobileNav() {
   const [open, setOpen] = useState(false);
+
+  // ホームを除いたナビゲーションリンクを取得
+  const menuLinks = navigationLinks.filter((link) => link.href !== "/");
 
   return (
     <Sheet open={open} onOpenChange={setOpen}>
@@ -63,7 +34,7 @@ export default function MobileNav() {
         </SheetHeader>
         <nav className="mt-8">
           <ul className="space-y-4">
-            {navigationLinks.map((link) => (
+            {menuLinks.map((link) => (
               <li key={link.href}>
                 <Link
                   href={link.href}

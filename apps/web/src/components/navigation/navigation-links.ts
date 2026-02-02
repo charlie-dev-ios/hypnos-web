@@ -2,10 +2,10 @@ import type { LucideIcon } from "lucide-react";
 import {
   Cat,
   ChefHat,
+  Cherry,
+  Egg,
   Home,
   Map as MapIcon,
-  Moon,
-  Settings,
   Users,
 } from "lucide-react";
 
@@ -40,27 +40,27 @@ export const navigationLinks: NavigationLink[] = [
     icon: ChefHat,
   },
   {
-    title: "島ガイド",
+    title: "フィールド情報",
     href: "/islands",
     description: "各フィールドの特徴とポケモン出現情報",
     icon: MapIcon,
   },
   {
-    title: "睡眠戦略",
-    href: "/strategies",
-    description: "効率的な睡眠計測と攻略のコツ",
-    icon: Moon,
+    title: "きのみ情報",
+    href: "/berries",
+    description: "きのみの種類と効果",
+    icon: Cherry,
+  },
+  {
+    title: "食材情報",
+    href: "/ingredients",
+    description: "食材の入手方法と使い道",
+    icon: Egg,
   },
   {
     title: "チーム編成",
     href: "/teams",
     description: "最適なポケモンチーム編成ガイド",
     icon: Users,
-  },
-  {
-    title: "ゲームメカニクス",
-    href: "/mechanics",
-    description: "睡眠タイプやゲームシステムの解説",
-    icon: Settings,
   },
 ];

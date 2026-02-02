@@ -23,8 +23,8 @@
 
 **Purpose**: 既存のナビゲーション構造の確認
 
-- [ ] T001 既存のナビゲーションテストを確認 in `apps/web/tests/unit/components/navigation/`
-- [ ] T002 既存のE2Eテストを確認 in `apps/web/e2e/navigation.spec.ts`
+- [x] T001 既存のナビゲーションテストを確認 in `apps/web/tests/unit/components/navigation/`
+- [x] T002 既存のE2Eテストを確認 in `apps/web/e2e/navigation.spec.ts`
 
 ---
 
@@ -34,8 +34,8 @@
 
 **⚠️ CRITICAL**: 全ユーザーストーリーに必要な共通インフラ
 
-- [ ] T003 [P] lucide-reactから Cherry, Egg アイコンをインポート可能か確認
-- [ ] T004 navigation-links.ts のバックアップまたはgit状態を確認
+- [x] T003 [P] lucide-reactから Cherry, Egg アイコンをインポート可能か確認
+- [x] T004 navigation-links.ts のバックアップまたはgit状態を確認
 
 **Checkpoint**: Foundation ready - ユーザーストーリー実装開始可能
 
@@ -51,15 +51,15 @@
 
 > **NOTE: Write these tests FIRST, ensure they FAIL before implementation**
 
-- [ ] T005 [US1] 「睡眠戦略」が表示されないことを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
-- [ ] T006 [P] [US1] 「ゲームメカニクス」が表示されないことを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
+- [x] T005 [US1] 「睡眠戦略」が表示されないことを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
+- [x] T006 [P] [US1] 「ゲームメカニクス」が表示されないことを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
 
 ### Implementation for User Story 1
 
-- [ ] T007 [US1] navigation-links.ts から「睡眠戦略」エントリを削除 in `apps/web/src/components/navigation/navigation-links.ts`
-- [ ] T008 [US1] navigation-links.ts から「ゲームメカニクス」エントリを削除 in `apps/web/src/components/navigation/navigation-links.ts`
-- [ ] T009 [US1] Moon, Settings アイコンのインポートを削除（未使用になるため） in `apps/web/src/components/navigation/navigation-links.ts`
-- [ ] T010 [US1] テストを実行し、パスすることを確認
+- [x] T007 [US1] navigation-links.ts から「睡眠戦略」エントリを削除 in `apps/web/src/components/navigation/navigation-links.ts`
+- [x] T008 [US1] navigation-links.ts から「ゲームメカニクス」エントリを削除 in `apps/web/src/components/navigation/navigation-links.ts`
+- [x] T009 [US1] Moon, Settings アイコンのインポートを削除（未使用になるため） in `apps/web/src/components/navigation/navigation-links.ts`
+- [x] T010 [US1] テストを実行し、パスすることを確認
 
 **Checkpoint**: User Story 1 完了 - 不要な項目が削除された状態
 
@@ -73,14 +73,14 @@
 
 ### Tests for User Story 2
 
-- [ ] T011 [US2] 「フィールド情報」が表示されることを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
-- [ ] T012 [P] [US2] 「島ガイド」が表示されないことを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
+- [x] T011 [US2] 「フィールド情報」が表示されることを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
+- [x] T012 [P] [US2] 「島ガイド」が表示されないことを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
 
 ### Implementation for User Story 2
 
-- [ ] T013 [US2] navigation-links.ts の「島ガイド」titleを「フィールド情報」に変更 in `apps/web/src/components/navigation/navigation-links.ts`
-- [ ] T014 [US2] descriptionも適切に更新 in `apps/web/src/components/navigation/navigation-links.ts`
-- [ ] T015 [US2] テストを実行し、パスすることを確認
+- [x] T013 [US2] navigation-links.ts の「島ガイド」titleを「フィールド情報」に変更 in `apps/web/src/components/navigation/navigation-links.ts`
+- [x] T014 [US2] descriptionも適切に更新 in `apps/web/src/components/navigation/navigation-links.ts`
+- [x] T015 [US2] テストを実行し、パスすることを確認
 
 **Checkpoint**: User Story 2 完了 - 名称変更された状態
 
@@ -94,15 +94,15 @@
 
 ### Tests for User Story 3
 
-- [ ] T016 [US3] 「きのみ情報」が表示されることを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
+- [x] T016 [US3] 「きのみ情報」が表示されることを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
 - [ ] T017 [P] [US3] /berries ページにアクセスできることを確認するE2Eテストを追加 in `apps/web/e2e/navigation.spec.ts`
 
 ### Implementation for User Story 3
 
-- [ ] T018 [US3] Cherry アイコンをインポート in `apps/web/src/components/navigation/navigation-links.ts`
-- [ ] T019 [US3] きのみ情報エントリを navigationLinks 配列に追加 in `apps/web/src/components/navigation/navigation-links.ts`
-- [ ] T020 [US3] きのみ情報プレースホルダーページを作成 in `apps/web/src/app/berries/page.tsx`
-- [ ] T021 [US3] テストを実行し、パスすることを確認
+- [x] T018 [US3] Cherry アイコンをインポート in `apps/web/src/components/navigation/navigation-links.ts`
+- [x] T019 [US3] きのみ情報エントリを navigationLinks 配列に追加 in `apps/web/src/components/navigation/navigation-links.ts`
+- [x] T020 [US3] きのみ情報プレースホルダーページを作成 in `apps/web/src/app/berries/page.tsx`
+- [x] T021 [US3] テストを実行し、パスすることを確認
 
 **Checkpoint**: User Story 3 完了 - きのみ情報にアクセス可能
 
@@ -116,15 +116,15 @@
 
 ### Tests for User Story 4
 
-- [ ] T022 [US4] 「食材情報」が表示されることを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
+- [x] T022 [US4] 「食材情報」が表示されることを確認するテストを追加 in `apps/web/tests/unit/components/navigation/top-nav.test.tsx`
 - [ ] T023 [P] [US4] /ingredients ページにアクセスできることを確認するE2Eテストを追加 in `apps/web/e2e/navigation.spec.ts`
 
 ### Implementation for User Story 4
 
-- [ ] T024 [US4] Egg アイコンをインポート in `apps/web/src/components/navigation/navigation-links.ts`
-- [ ] T025 [US4] 食材情報エントリを navigationLinks 配列に追加 in `apps/web/src/components/navigation/navigation-links.ts`
-- [ ] T026 [US4] 食材情報プレースホルダーページを作成 in `apps/web/src/app/ingredients/page.tsx`
-- [ ] T027 [US4] テストを実行し、パスすることを確認
+- [x] T024 [US4] Egg アイコンをインポート in `apps/web/src/components/navigation/navigation-links.ts`
+- [x] T025 [US4] 食材情報エントリを navigationLinks 配列に追加 in `apps/web/src/components/navigation/navigation-links.ts`
+- [x] T026 [US4] 食材情報プレースホルダーページを作成 in `apps/web/src/app/ingredients/page.tsx`
+- [x] T027 [US4] テストを実行し、パスすることを確認
 
 **Checkpoint**: User Story 4 完了 - 食材情報にアクセス可能
 
@@ -134,12 +134,12 @@
 
 **Purpose**: 全体的な品質確認とテスト更新
 
-- [ ] T028 [P] 統合テストを更新し、ナビゲーション項目数が6個であることを確認 in `apps/web/tests/integration/navigation.test.tsx`
+- [x] T028 [P] 統合テストを更新し、ナビゲーション項目数が6個であることを確認 in `apps/web/tests/integration/navigation.test.tsx`
 - [ ] T029 [P] E2Eテストを更新し、全ナビゲーションリンクが動作することを確認 in `apps/web/e2e/navigation.spec.ts`
-- [ ] T030 モバイルナビゲーションテストを更新 in `apps/web/tests/unit/components/navigation/mobile-nav.test.tsx`
-- [ ] T031 Lint/Format チェックを実行 (`bun check`)
-- [ ] T032 全テストスイートを実行 (`cd apps/web && bun run test`)
-- [ ] T033 quickstart.md の検証チェックリストを確認
+- [x] T030 モバイルナビゲーションテストを更新 in `apps/web/tests/unit/components/navigation/mobile-nav.test.tsx`
+- [x] T031 Lint/Format チェックを実行 (`bun check`)
+- [x] T032 全テストスイートを実行 (`cd apps/web && bun run test`)
+- [x] T033 quickstart.md の検証チェックリストを確認
 
 ---
 
