@@ -1,7 +1,7 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
 import { RotateCcw } from "lucide-react";
+import { useCallback, useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import type { SelectedRecipe } from "@/lib/schemas/calculator";
 import type { Recipe } from "@/lib/schemas/recipe";
@@ -26,7 +26,7 @@ export default function IngredientCalculator({
   // 選択済みレシピIDのリスト
   const selectedRecipeIds = useMemo(
     () => selectedRecipes.map((sr) => sr.recipeId),
-    [selectedRecipes]
+    [selectedRecipes],
   );
 
   // 選択済みレシピとそのデータを結合
@@ -37,21 +37,21 @@ export default function IngredientCalculator({
         if (!recipe) return null;
         return { recipe, quantity: sr.quantity };
       })
-      .filter((item): item is { recipe: Recipe; quantity: number } =>
-        item !== null
+      .filter(
+        (item): item is { recipe: Recipe; quantity: number } => item !== null,
       );
   }, [selectedRecipes, initialRecipes]);
 
   // 食材合計を計算
   const ingredientTotals = useMemo(
     () => calculateIngredientTotals(selectedRecipes, initialRecipes),
-    [selectedRecipes, initialRecipes]
+    [selectedRecipes, initialRecipes],
   );
 
   // 食材総数
   const grandTotal = useMemo(
     () => getGrandTotal(ingredientTotals),
-    [ingredientTotals]
+    [ingredientTotals],
   );
 
   // レシピを選択に追加
@@ -71,18 +71,16 @@ export default function IngredientCalculator({
         prev.map((sr) =>
           sr.recipeId === recipeId
             ? { ...sr, quantity: clampQuantity(quantity) }
-            : sr
-        )
+            : sr,
+        ),
       );
     },
-    []
+    [],
   );
 
   // レシピを削除
   const handleRemove = useCallback((recipeId: number) => {
-    setSelectedRecipes((prev) =>
-      prev.filter((sr) => sr.recipeId !== recipeId)
-    );
+    setSelectedRecipes((prev) => prev.filter((sr) => sr.recipeId !== recipeId));
   }, []);
 
   // すべてリセット

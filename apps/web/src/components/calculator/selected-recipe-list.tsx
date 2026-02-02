@@ -30,9 +30,7 @@ export default function SelectedRecipeList({
           <CardTitle className="text-lg">選択中のレシピ</CardTitle>
         </CardHeader>
         <CardContent>
-          <p className="text-gray-500 text-sm">
-            レシピが選択されていません
-          </p>
+          <p className="text-gray-500 text-sm">レシピが選択されていません</p>
         </CardContent>
       </Card>
     );
@@ -87,7 +85,9 @@ export default function SelectedRecipeList({
                   min={1}
                   max={99}
                   value={quantity}
-                  onChange={(e) => handleQuantityInput(recipe.id, e.target.value)}
+                  onChange={(e) =>
+                    handleQuantityInput(recipe.id, e.target.value)
+                  }
                   className="w-14 h-8 text-center text-sm"
                   aria-label={`${recipe.name}の数量`}
                 />

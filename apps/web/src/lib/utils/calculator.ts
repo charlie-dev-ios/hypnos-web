@@ -1,5 +1,5 @@
-import type { Recipe } from "@/lib/schemas/recipe";
 import type { IngredientTotal, SelectedRecipe } from "@/lib/schemas/calculator";
+import type { Recipe } from "@/lib/schemas/recipe";
 
 /**
  * 選択されたレシピから必要食材の合計を計算
@@ -9,7 +9,7 @@ import type { IngredientTotal, SelectedRecipe } from "@/lib/schemas/calculator";
  */
 export function calculateIngredientTotals(
   selectedRecipes: SelectedRecipe[],
-  allRecipes: Recipe[]
+  allRecipes: Recipe[],
 ): IngredientTotal[] {
   const ingredientMap = new Map<string, number>();
 
@@ -21,7 +21,7 @@ export function calculateIngredientTotals(
       const current = ingredientMap.get(ingredient.name) || 0;
       ingredientMap.set(
         ingredient.name,
-        current + ingredient.quantity * selected.quantity
+        current + ingredient.quantity * selected.quantity,
       );
     }
   }

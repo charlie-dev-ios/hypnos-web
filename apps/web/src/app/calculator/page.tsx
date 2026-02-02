@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import Breadcrumb from "@/components/navigation/breadcrumb";
 import IngredientCalculator from "@/components/calculator/ingredient-calculator";
+import Breadcrumb from "@/components/navigation/breadcrumb";
 import { getAllRecipes } from "@/lib/data/recipes";
 
 export const metadata: Metadata = {

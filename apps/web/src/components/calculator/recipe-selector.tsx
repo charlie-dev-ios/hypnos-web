@@ -1,7 +1,7 @@
 "use client";
 
-import { useMemo, useState } from "react";
 import { Plus, Search, X } from "lucide-react";
+import { useMemo, useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -24,13 +24,13 @@ export default function RecipeSelector({
     const query = searchQuery.trim().toLowerCase();
     if (!query) return recipes;
     return recipes.filter((recipe) =>
-      recipe.name.toLowerCase().includes(query)
+      recipe.name.toLowerCase().includes(query),
     );
   }, [recipes, searchQuery]);
 
   const availableRecipes = useMemo(() => {
     return filteredRecipes.filter(
-      (recipe) => !selectedRecipeIds.includes(recipe.id)
+      (recipe) => !selectedRecipeIds.includes(recipe.id),
     );
   }, [filteredRecipes, selectedRecipeIds]);
 
