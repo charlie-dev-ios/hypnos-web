@@ -3,15 +3,29 @@ import { describe, expect, it } from "vitest";
 import TopNav from "@/components/navigation/top-nav";
 
 describe("TopNav", () => {
-  it("should render all 6 content section cards", () => {
+  it("should render navigation items without removed items", () => {
     render(<TopNav />);
 
     expect(screen.getByText("ポケモン図鑑")).toBeInTheDocument();
-    expect(screen.getByText("ゲームメカニクス")).toBeInTheDocument();
-    expect(screen.getByText("睡眠戦略")).toBeInTheDocument();
     expect(screen.getByText("チーム編成")).toBeInTheDocument();
     expect(screen.getByText("料理情報")).toBeInTheDocument();
-    expect(screen.getByText("島ガイド")).toBeInTheDocument();
+    // 削除された項目が表示されないこと
+    expect(screen.queryByText("睡眠戦略")).not.toBeInTheDocument();
+    expect(screen.queryByText("ゲームメカニクス")).not.toBeInTheDocument();
+  });
+
+  it("should render フィールド情報 instead of 島ガイド", () => {
+    render(<TopNav />);
+
+    expect(screen.getByText("フィールド情報")).toBeInTheDocument();
+    expect(screen.queryByText("島ガイド")).not.toBeInTheDocument();
+  });
+
+  it("should render new navigation items きのみ情報 and 食材情報", () => {
+    render(<TopNav />);
+
+    expect(screen.getByText("きのみ情報")).toBeInTheDocument();
+    expect(screen.getByText("食材情報")).toBeInTheDocument();
   });
 
   it("should render cards with correct links", () => {
@@ -20,30 +34,26 @@ describe("TopNav", () => {
     const pokemonLink = screen.getByRole("link", { name: /ポケモン図鑑/i });
     expect(pokemonLink).toHaveAttribute("href", "/pokemon");
 
-    const mechanicsLink = screen.getByRole("link", {
-      name: /ゲームメカニクス/i,
-    });
-    expect(mechanicsLink).toHaveAttribute("href", "/mechanics");
-
-    const strategiesLink = screen.getByRole("link", { name: /睡眠戦略/i });
-    expect(strategiesLink).toHaveAttribute("href", "/strategies");
-
     const teamsLink = screen.getByRole("link", { name: /チーム編成/i });
     expect(teamsLink).toHaveAttribute("href", "/teams");
 
     const recipesLink = screen.getByRole("link", { name: /料理情報/i });
     expect(recipesLink).toHaveAttribute("href", "/recipes");
 
-    const islandsLink = screen.getByRole("link", { name: /島ガイド/i });
-    expect(islandsLink).toHaveAttribute("href", "/islands");
+    const fieldsLink = screen.getByRole("link", { name: /フィールド情報/i });
+    expect(fieldsLink).toHaveAttribute("href", "/islands");
+
+    const berriesLink = screen.getByRole("link", { name: /きのみ情報/i });
+    expect(berriesLink).toHaveAttribute("href", "/berries");
+
+    const ingredientsLink = screen.getByRole("link", { name: /食材情報/i });
+    expect(ingredientsLink).toHaveAttribute("href", "/ingredients");
   });
 
   it("should render card descriptions", () => {
     render(<TopNav />);
 
     expect(screen.getByText(/ポケモンの詳細情報を検索/i)).toBeInTheDocument();
-    expect(
-      screen.getByText(/睡眠タイプやゲームシステムの解説/i),
-    ).toBeInTheDocument();
+    expect(screen.getByText(/フィールドの特徴/i)).toBeInTheDocument();
   });
 });

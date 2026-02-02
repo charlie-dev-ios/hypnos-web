@@ -24,10 +24,14 @@ describe("AppSidebar", () => {
     expect(screen.getByText("ホーム")).toBeInTheDocument();
     expect(screen.getByText("ポケモン図鑑")).toBeInTheDocument();
     expect(screen.getByText("料理情報")).toBeInTheDocument();
-    expect(screen.getByText("島ガイド")).toBeInTheDocument();
-    expect(screen.getByText("睡眠戦略")).toBeInTheDocument();
+    expect(screen.getByText("フィールド情報")).toBeInTheDocument();
+    expect(screen.getByText("きのみ情報")).toBeInTheDocument();
+    expect(screen.getByText("食材情報")).toBeInTheDocument();
     expect(screen.getByText("チーム編成")).toBeInTheDocument();
-    expect(screen.getByText("ゲームメカニクス")).toBeInTheDocument();
+    // 削除された項目が表示されないこと
+    expect(screen.queryByText("島ガイド")).not.toBeInTheDocument();
+    expect(screen.queryByText("睡眠戦略")).not.toBeInTheDocument();
+    expect(screen.queryByText("ゲームメカニクス")).not.toBeInTheDocument();
   });
 
   it("renders links with correct hrefs", () => {
@@ -41,6 +45,15 @@ describe("AppSidebar", () => {
 
     const recipesLink = screen.getByRole("link", { name: /料理情報/i });
     expect(recipesLink).toHaveAttribute("href", "/recipes");
+
+    const fieldsLink = screen.getByRole("link", { name: /フィールド情報/i });
+    expect(fieldsLink).toHaveAttribute("href", "/islands");
+
+    const berriesLink = screen.getByRole("link", { name: /きのみ情報/i });
+    expect(berriesLink).toHaveAttribute("href", "/berries");
+
+    const ingredientsLink = screen.getByRole("link", { name: /食材情報/i });
+    expect(ingredientsLink).toHaveAttribute("href", "/ingredients");
   });
 
   it("marks home link as active when on root path", () => {
