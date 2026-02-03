@@ -27,6 +27,7 @@ describe("AppSidebar", () => {
     expect(screen.getByText("フィールド")).toBeInTheDocument();
     expect(screen.getByText("きのみ")).toBeInTheDocument();
     expect(screen.getByText("食材")).toBeInTheDocument();
+    expect(screen.getByText("食材計算機")).toBeInTheDocument();
     expect(screen.getByText("チーム編成")).toBeInTheDocument();
     // 削除された項目が表示されないこと
     expect(screen.queryByText("島ガイド")).not.toBeInTheDocument();
@@ -52,8 +53,11 @@ describe("AppSidebar", () => {
     const berriesLink = screen.getByRole("link", { name: /きのみ/i });
     expect(berriesLink).toHaveAttribute("href", "/berries");
 
-    const ingredientsLink = screen.getByRole("link", { name: /食材/i });
+    const ingredientsLink = screen.getByRole("link", { name: /^食材$/ });
     expect(ingredientsLink).toHaveAttribute("href", "/ingredients");
+
+    const calculatorLink = screen.getByRole("link", { name: /食材計算機/i });
+    expect(calculatorLink).toHaveAttribute("href", "/calculator");
   });
 
   it("marks home link as active when on root path", () => {
