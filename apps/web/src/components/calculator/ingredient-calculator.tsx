@@ -110,7 +110,7 @@ export default function IngredientCalculator({
 
       <div className="grid gap-6 lg:grid-cols-2">
         {/* 左カラム: レシピ選択 & 選択済みリスト */}
-        <div className="space-y-6">
+        <div className="space-y-6 min-w-0">
           <RecipeSelector
             recipes={initialRecipes}
             selectedRecipeIds={selectedRecipeIds}
