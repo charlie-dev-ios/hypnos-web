@@ -1,8 +1,6 @@
 "use client";
 
-import { RotateCcw } from "lucide-react";
 import { useCallback, useMemo, useState } from "react";
-import { Button } from "@/components/ui/button";
 import type { SelectedRecipe } from "@/lib/schemas/calculator";
 import type { Recipe } from "@/lib/schemas/recipe";
 import {
@@ -93,21 +91,6 @@ export default function IngredientCalculator({
 
   return (
     <div className="space-y-6">
-      {/* ヘッダー（リセットボタン） */}
-      {selectedRecipes.length > 0 && (
-        <div className="flex justify-end">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={handleReset}
-            className="text-gray-600"
-          >
-            <RotateCcw className="h-4 w-4 mr-1" />
-            リセット
-          </Button>
-        </div>
-      )}
-
       <div className="grid gap-6 lg:grid-cols-2">
         {/* 左カラム: レシピ選択 & 選択済みリスト */}
         <div className="space-y-6 min-w-0">
@@ -120,6 +103,7 @@ export default function IngredientCalculator({
             items={selectedItems}
             onQuantityChange={handleQuantityChange}
             onRemove={handleRemove}
+            onReset={handleReset}
           />
         </div>
 
