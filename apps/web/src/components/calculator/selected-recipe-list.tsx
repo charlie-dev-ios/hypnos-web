@@ -65,7 +65,7 @@ export default function SelectedRecipeList({
               key={recipe.id}
               className="flex items-center gap-3 p-2 bg-gray-50 rounded-lg"
             >
-              <div className="flex-1 min-w-0">
+              <div className="flex-1 min-w-0 overflow-hidden">
                 <p className="text-sm font-medium truncate">{recipe.name}</p>
                 <p className="text-xs text-gray-500">{recipe.type}</p>
               </div>
