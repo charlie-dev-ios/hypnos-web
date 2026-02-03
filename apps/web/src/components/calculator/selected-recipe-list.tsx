@@ -52,7 +52,7 @@ export default function SelectedRecipeList({
   };
 
   return (
-    <Card>
+    <Card className="overflow-hidden">
       <CardHeader>
         <CardTitle className="text-lg">
           選択中のレシピ ({items.length}件)
@@ -63,13 +63,13 @@ export default function SelectedRecipeList({
           {items.map(({ recipe, quantity }) => (
             <li
               key={recipe.id}
-              className="flex items-center gap-3 p-2 bg-gray-50 rounded-lg overflow-hidden"
+              className="flex items-center gap-3 p-2 bg-gray-50 rounded-lg"
             >
               <div className="flex-1 min-w-0">
                 <p className="text-sm font-medium truncate">{recipe.name}</p>
                 <p className="text-xs text-gray-500">{recipe.type}</p>
               </div>
-              <div className="flex items-center gap-1 flex-shrink-0">
+              <div className="flex items-center gap-1">
                 <Button
                   variant="outline"
                   size="icon"
@@ -105,7 +105,7 @@ export default function SelectedRecipeList({
               <Button
                 variant="ghost"
                 size="icon"
-                className="h-8 w-8 text-gray-500 hover:text-red-500 flex-shrink-0"
+                className="h-8 w-8 text-gray-500 hover:text-red-500"
                 onClick={() => onRemove(recipe.id)}
                 aria-label={`${recipe.name}を削除`}
               >
