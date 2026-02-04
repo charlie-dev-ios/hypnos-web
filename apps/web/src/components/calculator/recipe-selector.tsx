@@ -108,16 +108,15 @@ export default function RecipeSelector({
     <Card>
       <CardHeader className="flex flex-row items-center justify-between space-y-0">
         <CardTitle className="text-lg">レシピを選択</CardTitle>
-        {selectedCount > 0 && (
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={onReset}
-            className="text-xs"
-          >
-            リセット
-          </Button>
-        )}
+        <Button
+          variant="outline"
+          size="sm"
+          onClick={onReset}
+          disabled={selectedCount === 0}
+          className="text-xs"
+        >
+          リセット
+        </Button>
       </CardHeader>
       <CardContent className="space-y-3">
         {/* 鍋容量フィルター */}
