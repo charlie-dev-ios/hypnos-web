@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <body className={`${notoSansJP.variable} font-sans antialiased`}>
-        <Toaster />
+        <Toaster position="top-right" />
         <SidebarProvider>
           <AppSidebar />
           <SidebarInset>

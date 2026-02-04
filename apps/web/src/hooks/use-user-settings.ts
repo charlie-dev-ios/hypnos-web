@@ -59,7 +59,9 @@ function saveSettings(settings: UserSettings): void {
  * @returns ユーザー設定と更新関数
  */
 export function useUserSettings() {
-  const [settings, setSettingsState] = useState<UserSettings>(DEFAULT_USER_SETTINGS);
+  const [settings, setSettingsState] = useState<UserSettings>(
+    DEFAULT_USER_SETTINGS,
+  );
   const [isLoaded, setIsLoaded] = useState(false);
 
   // 初期化時にlocalStorageから読み込み

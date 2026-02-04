@@ -60,7 +60,9 @@ export function SettingsForm() {
               {RANK_PRESETS.map((preset) => (
                 <Button
                   key={preset.value}
-                  variant={settings.rank === preset.value ? "default" : "outline"}
+                  variant={
+                    settings.rank === preset.value ? "default" : "outline"
+                  }
                   size="sm"
                   onClick={() => handleRankChange(preset.value)}
                 >
@@ -94,7 +96,11 @@ export function SettingsForm() {
               {POT_CAPACITY_PRESETS.map((preset) => (
                 <Button
                   key={preset.value}
-                  variant={settings.potCapacity === preset.value ? "default" : "outline"}
+                  variant={
+                    settings.potCapacity === preset.value
+                      ? "default"
+                      : "outline"
+                  }
                   size="sm"
                   onClick={() => handlePotCapacityChange(preset.value)}
                 >
