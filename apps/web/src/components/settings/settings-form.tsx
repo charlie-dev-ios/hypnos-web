@@ -84,30 +84,23 @@ export function SettingsForm() {
             必要食材計算機などで使用するデフォルトの鍋容量を設定できます。
           </p>
           <div className="space-y-2">
-            <Label>鍋容量</Label>
-            <div className="flex flex-wrap gap-2">
-              <Button
-                variant={settings.potCapacity === null ? "default" : "outline"}
-                size="sm"
-                onClick={() => handlePotCapacityChange(null)}
-              >
-                未設定
-              </Button>
+            <Label htmlFor="pot-capacity">鍋容量</Label>
+            <select
+              id="pot-capacity"
+              value={settings.potCapacity ?? ""}
+              onChange={(e) => {
+                const value = e.target.value;
+                handlePotCapacityChange(value === "" ? null : Number(value));
+              }}
+              className="flex h-9 w-full max-w-xs rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
+            >
+              <option value="">未設定</option>
               {POT_CAPACITY_PRESETS.map((preset) => (
-                <Button
-                  key={preset.value}
-                  variant={
-                    settings.potCapacity === preset.value
-                      ? "default"
-                      : "outline"
-                  }
-                  size="sm"
-                  onClick={() => handlePotCapacityChange(preset.value)}
-                >
+                <option key={preset.value} value={preset.value}>
                   {preset.label} ({preset.value})
-                </Button>
+                </option>
               ))}
-            </div>
+            </select>
           </div>
         </CardContent>
       </Card>
