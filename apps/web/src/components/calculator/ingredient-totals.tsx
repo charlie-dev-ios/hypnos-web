@@ -42,7 +42,7 @@ export default function IngredientTotals({
           <div className="flex items-center gap-1">
             <span className="text-gray-500">合計エナジー:</span>
             <span className="font-medium text-amber-600">
-              {formatNumber(totalEnergy)} EP
+              {formatNumber(totalEnergy)}
             </span>
           </div>
         </div>

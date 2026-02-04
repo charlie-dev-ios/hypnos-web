@@ -220,7 +220,7 @@ export default function RecipeSelector({
                           <span>食材 {recipe.ingredientCount}個</span>
                           <span>・</span>
                           <span className="text-amber-600 font-medium">
-                            {formatNumber(recipe.energy)} EP
+                            {formatNumber(recipe.energy)}
                           </span>
                         </div>
                       </div>

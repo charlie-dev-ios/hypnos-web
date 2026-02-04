@@ -11,7 +11,6 @@ import {
 } from "@/lib/utils/calculator";
 import IngredientTotals from "./ingredient-totals";
 import RecipeSelector from "./recipe-selector";
-import SelectedRecipeList from "./selected-recipe-list";
 
 interface IngredientCalculatorProps {
   initialRecipes: Recipe[];
@@ -22,19 +21,6 @@ export default function IngredientCalculator({
 }: IngredientCalculatorProps) {
   const [selectedRecipes, setSelectedRecipes] = useState<SelectedRecipe[]>([]);
   const [potCapacity, setPotCapacity] = useState<number | null>(null);
-
-  // 選択済みレシピとそのデータを結合
-  const selectedItems = useMemo(() => {
-    return selectedRecipes
-      .map((sr) => {
-        const recipe = initialRecipes.find((r) => r.id === sr.recipeId);
-        if (!recipe) return null;
-        return { recipe, quantity: sr.quantity };
-      })
-      .filter(
-        (item): item is { recipe: Recipe; quantity: number } => item !== null,
-      );
-  }, [selectedRecipes, initialRecipes]);
 
   // 食材合計を計算
   const ingredientTotals = useMemo(
@@ -80,16 +66,6 @@ export default function IngredientCalculator({
     [],
   );
 
-  // レシピを削除
-  const handleRemove = useCallback((recipeId: number) => {
-    setSelectedRecipes((prev) => prev.filter((sr) => sr.recipeId !== recipeId));
-  }, []);
-
-  // すべてリセット
-  const handleReset = useCallback(() => {
-    setSelectedRecipes([]);
-  }, []);
-
   // 鍋容量を変更
   const handlePotCapacityChange = useCallback((capacity: number | null) => {
     setPotCapacity(capacity);
@@ -98,20 +74,14 @@ export default function IngredientCalculator({
   return (
     <div className="space-y-6">
       <div className="grid gap-6 lg:grid-cols-2">
-        {/* 左カラム: レシピ選択 & 選択済みリスト */}
-        <div className="space-y-6 min-w-0">
+        {/* 左カラム: レシピ選択 */}
+        <div className="min-w-0">
           <RecipeSelector
             recipes={initialRecipes}
             selectedRecipes={selectedRecipes}
             onQuantityChange={handleQuantityChange}
             potCapacity={potCapacity}
             onPotCapacityChange={handlePotCapacityChange}
-          />
-          <SelectedRecipeList
-            items={selectedItems}
-            onQuantityChange={handleQuantityChange}
-            onRemove={handleRemove}
-            onReset={handleReset}
           />
         </div>
 
