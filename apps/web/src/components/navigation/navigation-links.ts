@@ -7,7 +7,6 @@ import {
   Egg,
   Home,
   Map as MapIcon,
-  Settings,
   Users,
 } from "lucide-react";
 
@@ -70,11 +69,5 @@ export const navigationLinks: NavigationLink[] = [
     href: "/teams",
     description: "最適なポケモンチーム編成ガイド",
     icon: Users,
-  },
-  {
-    title: "設定",
-    href: "/settings",
-    description: "デフォルトのランクや鍋容量を設定",
-    icon: Settings,
   },
 ];
