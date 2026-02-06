@@ -1,6 +1,7 @@
 "use client";
 
 import { Minus, Plus, Settings } from "lucide-react";
+import { useEffect, useState } from "react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import {
@@ -13,44 +14,54 @@ import {
 } from "@/components/ui/dialog";
 import { Label } from "@/components/ui/label";
 import { useUserSettings } from "@/hooks/use-user-settings";
+import type { UserSettings } from "@/lib/schemas/user-settings";
 import { POT_CAPACITY_PRESETS } from "@/lib/utils/calculator";
 
 export function AccountMenu() {
   const { settings, setSettings, resetSettings, isLoaded } = useUserSettings();
+  const [open, setOpen] = useState(false);
+  const [draft, setDraft] = useState<UserSettings>({
+    rank: null,
+    potCapacity: null,
+  });
 
-  const handleRankChange = (value: number | null) => {
-    setSettings({ rank: value });
-    toast.success("ランク設定を保存しました");
-  };
+  // Dialogが開いたときに現在の設定をコピー
+  useEffect(() => {
+    if (open && isLoaded) {
+      setDraft({ ...settings });
+    }
+  }, [open, isLoaded, settings]);
 
-  const handlePotCapacityChange = (value: number | null) => {
-    setSettings({ potCapacity: value });
-    toast.success("鍋容量設定を保存しました");
+  const handleSave = () => {
+    setSettings(draft);
+    toast.success("設定を保存しました");
+    setOpen(false);
   };
 
   const handleReset = () => {
     resetSettings();
+    setDraft({ rank: null, potCapacity: null });
     toast.success("設定をリセットしました");
   };
 
   const incrementRank = () => {
-    const current = settings.rank ?? 0;
+    const current = draft.rank ?? 0;
     if (current < 60) {
-      handleRankChange(current + 1);
+      setDraft({ ...draft, rank: current + 1 });
     }
   };
 
   const decrementRank = () => {
-    const current = settings.rank ?? 1;
+    const current = draft.rank ?? 1;
     if (current > 1) {
-      handleRankChange(current - 1);
+      setDraft({ ...draft, rank: current - 1 });
     } else {
-      handleRankChange(null);
+      setDraft({ ...draft, rank: null });
     }
   };
 
   return (
-    <Dialog>
+    <Dialog open={open} onOpenChange={setOpen}>
       <DialogTrigger asChild>
         <Button variant="ghost" size="icon" aria-label="設定">
           <Settings className="h-5 w-5" />
@@ -77,20 +88,20 @@ export function AccountMenu() {
                   size="icon"
                   className="h-8 w-8"
                   onClick={decrementRank}
-                  disabled={settings.rank === null}
+                  disabled={draft.rank === null}
                   aria-label="ランクを下げる"
                 >
                   <Minus className="h-4 w-4" />
                 </Button>
                 <span className="w-16 text-center font-medium">
-                  {settings.rank ?? "-"}
+                  {draft.rank ?? "-"}
                 </span>
                 <Button
                   variant="outline"
                   size="icon"
                   className="h-8 w-8"
                   onClick={incrementRank}
-                  disabled={settings.rank === 60}
+                  disabled={draft.rank === 60}
                   aria-label="ランクを上げる"
                 >
                   <Plus className="h-4 w-4" />
@@ -101,10 +112,10 @@ export function AccountMenu() {
                 type="range"
                 min={1}
                 max={60}
-                value={settings.rank ?? 1}
+                value={draft.rank ?? 1}
                 onChange={(e) => {
                   const value = Number.parseInt(e.target.value, 10);
-                  handleRankChange(value);
+                  setDraft({ ...draft, rank: value });
                 }}
                 className="w-full h-2 bg-gray-200 rounded-lg appearance-none cursor-pointer accent-primary"
               />
@@ -120,10 +131,13 @@ export function AccountMenu() {
               <Label htmlFor="pot-capacity">デフォルト鍋容量</Label>
               <select
                 id="pot-capacity"
-                value={settings.potCapacity ?? ""}
+                value={draft.potCapacity ?? ""}
                 onChange={(e) => {
                   const value = e.target.value;
-                  handlePotCapacityChange(value === "" ? null : Number(value));
+                  setDraft({
+                    ...draft,
+                    potCapacity: value === "" ? null : Number(value),
+                  });
                 }}
                 className="flex h-9 w-full rounded-md border border-input bg-transparent px-3 py-1 text-sm shadow-sm transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring"
               >
@@ -136,10 +150,13 @@ export function AccountMenu() {
               </select>
             </div>
 
-            {/* リセットボタン */}
-            <div className="pt-2">
+            {/* ボタン */}
+            <div className="flex items-center justify-between pt-2">
               <Button variant="outline" size="sm" onClick={handleReset}>
-                設定をリセット
+                リセット
+              </Button>
+              <Button size="sm" onClick={handleSave}>
+                保存
               </Button>
             </div>
           </div>
