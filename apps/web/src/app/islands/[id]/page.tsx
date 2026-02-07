@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import SnorlaxRankTable from "@/components/islands/snorlax-rank-table";
 import Breadcrumb from "@/components/navigation/breadcrumb";
 import { getAllIslands, getIslandById } from "@/lib/data/islands";
 
@@ -72,6 +73,11 @@ export default async function IslandDetailPage({
             <span className="font-medium">とくいきのみ:</span>{" "}
             {island.specialtyBerry}
           </div>
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">カビゴン評価</h2>
+          <SnorlaxRankTable ranks={island.snorlaxRanks} />
         </section>
       </div>
     </div>
