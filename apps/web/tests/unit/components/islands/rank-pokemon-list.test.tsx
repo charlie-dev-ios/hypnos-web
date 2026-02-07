@@ -21,9 +21,7 @@ const mockPokemonMap = new Map([
 
 describe("RankPokemonList", () => {
   it("should render all rank sections", () => {
-    render(
-      <RankPokemonList ranks={mockRanks} pokemonMap={mockPokemonMap} />,
-    );
+    render(<RankPokemonList ranks={mockRanks} pokemonMap={mockPokemonMap} />);
 
     expect(screen.getByText("ノーマル")).toBeInTheDocument();
     expect(screen.getByText("いいかんじ")).toBeInTheDocument();
@@ -34,9 +32,7 @@ describe("RankPokemonList", () => {
   });
 
   it("should display pokemon names", () => {
-    render(
-      <RankPokemonList ranks={mockRanks} pokemonMap={mockPokemonMap} />,
-    );
+    render(<RankPokemonList ranks={mockRanks} pokemonMap={mockPokemonMap} />);
 
     expect(screen.getByText("ピチュー")).toBeInTheDocument();
     expect(screen.getByText("ピカチュウ")).toBeInTheDocument();
@@ -45,9 +41,7 @@ describe("RankPokemonList", () => {
   });
 
   it("should link pokemon names to pokemon detail pages", () => {
-    render(
-      <RankPokemonList ranks={mockRanks} pokemonMap={mockPokemonMap} />,
-    );
+    render(<RankPokemonList ranks={mockRanks} pokemonMap={mockPokemonMap} />);
 
     const links = screen.getAllByRole("link");
     const hrefs = links.map((link) => link.getAttribute("href"));
@@ -59,9 +53,7 @@ describe("RankPokemonList", () => {
   });
 
   it("should show 'なし' for ranks with no new pokemon", () => {
-    render(
-      <RankPokemonList ranks={mockRanks} pokemonMap={mockPokemonMap} />,
-    );
+    render(<RankPokemonList ranks={mockRanks} pokemonMap={mockPokemonMap} />);
 
     const noneTexts = screen.getAllByText("なし");
     expect(noneTexts.length).toBe(3); // すごいぞ, ハイパー, マスター

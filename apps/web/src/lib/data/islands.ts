@@ -20,9 +20,7 @@ export async function getAllIslands(): Promise<Island[]> {
  * @param id - Island ID
  * @returns Promise<Island | undefined> - Island if found, undefined otherwise
  */
-export async function getIslandById(
-  id: number,
-): Promise<Island | undefined> {
+export async function getIslandById(id: number): Promise<Island | undefined> {
   const allIslands = await getAllIslands();
   return allIslands.find((island) => island.id === id);
 }
