@@ -1,8 +1,10 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import RankPokemonList from "@/components/islands/rank-pokemon-list";
 import SnorlaxRankTable from "@/components/islands/snorlax-rank-table";
 import Breadcrumb from "@/components/navigation/breadcrumb";
 import { getAllIslands, getIslandById } from "@/lib/data/islands";
+import { getAllPokemon } from "@/lib/data/pokemon";
 
 interface IslandDetailPageProps {
   params: Promise<{
@@ -53,6 +55,11 @@ export default async function IslandDetailPage({
     notFound();
   }
 
+  const allPokemon = await getAllPokemon();
+  const pokemonMap = new Map(
+    allPokemon.map((p) => [p.id, { id: p.id, name: p.name }]),
+  );
+
   return (
     <div className="container mx-auto px-4 py-8">
       <Breadcrumb
@@ -78,6 +85,14 @@ export default async function IslandDetailPage({
         <section>
           <h2 className="text-2xl font-semibold mb-4">カビゴン評価</h2>
           <SnorlaxRankTable ranks={island.snorlaxRanks} />
+        </section>
+
+        <section>
+          <h2 className="text-2xl font-semibold mb-4">出現ポケモン</h2>
+          <RankPokemonList
+            ranks={island.snorlaxRanks}
+            pokemonMap={pokemonMap}
+          />
         </section>
       </div>
     </div>
