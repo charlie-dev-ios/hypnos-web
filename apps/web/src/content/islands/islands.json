@@ -4,7 +4,7 @@
       "id": 1,
       "name": "ワカクサ本島",
       "description": "最初に訪れるフィールド。多くのポケモンが生息しており、毎週ランダムでカビゴンの好きなきのみが変わる。",
-      "specialtyBerry": "ランダム",
+      "specialtyBerries": ["ランダム"],
       "snorlaxRanks": [
         { "rankTier": "ノーマル", "rankNumber": 1, "requiredEnergy": 0, "dreamShards": 0, "newPokemonIds": [] },
         { "rankTier": "ノーマル", "rankNumber": 2, "requiredEnergy": 3118, "dreamShards": 35, "newPokemonIds": [] },
@@ -47,7 +47,7 @@
       "id": 2,
       "name": "シアンの砂浜",
       "description": "美しい砂浜が広がるフィールド。みずタイプのポケモンが多く生息している。",
-      "specialtyBerry": "オレンのみ",
+      "specialtyBerries": ["オレンのみ", "モモンのみ", "シーヤのみ"],
       "snorlaxRanks": [
         { "rankTier": "ノーマル", "rankNumber": 1, "requiredEnergy": 0, "dreamShards": 0, "newPokemonIds": [] },
         { "rankTier": "ノーマル", "rankNumber": 2, "requiredEnergy": 4822, "dreamShards": 54, "newPokemonIds": [] },
@@ -90,7 +90,7 @@
       "id": 3,
       "name": "トープ洞窟",
       "description": "薄暗い洞窟のフィールド。どくタイプやいわタイプのポケモンが生息している。",
-      "specialtyBerry": "フィラのみ",
+      "specialtyBerries": ["ヒメリのみ", "フィラのみ", "オボンのみ"],
       "snorlaxRanks": [
         { "rankTier": "ノーマル", "rankNumber": 1, "requiredEnergy": 0, "dreamShards": 0, "newPokemonIds": [] },
         { "rankTier": "ノーマル", "rankNumber": 2, "requiredEnergy": 6885, "dreamShards": 77, "newPokemonIds": [] },
@@ -133,7 +133,7 @@
       "id": 4,
       "name": "ウノハナ雪原",
       "description": "一面の雪に覆われたフィールド。こおりタイプのポケモンが多く見られる。",
-      "specialtyBerry": "チーゴのみ",
+      "specialtyBerries": ["チーゴのみ", "キーのみ", "ウイのみ"],
       "snorlaxRanks": [
         { "rankTier": "ノーマル", "rankNumber": 1, "requiredEnergy": 0, "dreamShards": 0, "newPokemonIds": [] },
         { "rankTier": "ノーマル", "rankNumber": 2, "requiredEnergy": 10486, "dreamShards": 117, "newPokemonIds": [] },
@@ -176,7 +176,7 @@
       "id": 5,
       "name": "ラピスラズリ湖畔",
       "description": "澄み切った湖のほとりに広がるフィールド。くさタイプやかくとうタイプのポケモンが生息している。",
-      "specialtyBerry": "ドリのみ",
+      "specialtyBerries": ["ドリのみ", "マゴのみ", "クラボのみ"],
       "snorlaxRanks": [
         { "rankTier": "ノーマル", "rankNumber": 1, "requiredEnergy": 0, "dreamShards": 0, "newPokemonIds": [] },
         { "rankTier": "ノーマル", "rankNumber": 2, "requiredEnergy": 12938, "dreamShards": 144, "newPokemonIds": [] },
@@ -219,7 +219,7 @@
       "id": 6,
       "name": "ゴールド旧発電所",
       "description": "かつて稼働していた発電所跡地のフィールド。でんきタイプのポケモンが多く生息している。",
-      "specialtyBerry": "ベリブのみ",
+      "specialtyBerries": ["ウブのみ", "ブリーのみ", "ベリブのみ"],
       "snorlaxRanks": [
         { "rankTier": "ノーマル", "rankNumber": 1, "requiredEnergy": 0, "dreamShards": 0, "newPokemonIds": [] },
         { "rankTier": "ノーマル", "rankNumber": 2, "requiredEnergy": 20142, "dreamShards": 224, "newPokemonIds": [] },

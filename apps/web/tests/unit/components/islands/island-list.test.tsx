@@ -32,14 +32,14 @@ const mockIslands: Island[] = [
     id: 1,
     name: "ワカクサ本島",
     description: "最初に訪れるフィールド。",
-    specialtyBerry: "ランダム",
+    specialtyBerries: ["ランダム"],
     snorlaxRanks,
   },
   {
     id: 2,
     name: "シアンの砂浜",
     description: "美しい砂浜が広がるフィールド。",
-    specialtyBerry: "オレンのみ",
+    specialtyBerries: ["オレンのみ", "モモンのみ", "シーヤのみ"],
     snorlaxRanks,
   },
 ];

@@ -29,7 +29,7 @@ const mockIsland: Island = {
   id: 1,
   name: "ワカクサ本島",
   description: "最初に訪れるフィールド。",
-  specialtyBerry: "ランダム",
+  specialtyBerries: ["ランダム"],
   snorlaxRanks: generateSnorlaxRanks(),
 };
 
@@ -37,7 +37,7 @@ const mockIslandWithFixedBerry: Island = {
   ...mockIsland,
   id: 2,
   name: "シアンの砂浜",
-  specialtyBerry: "オレンのみ",
+  specialtyBerries: ["オレンのみ", "モモンのみ", "シーヤのみ"],
 };
 
 describe("IslandCard", () => {
@@ -53,10 +53,10 @@ describe("IslandCard", () => {
     expect(screen.getByText(/ランダム/)).toBeInTheDocument();
   });
 
-  it("should display fixed berry name", () => {
+  it("should display fixed berry names", () => {
     render(<IslandCard island={mockIslandWithFixedBerry} />);
 
-    expect(screen.getByText(/オレンのみ/)).toBeInTheDocument();
+    expect(screen.getByText(/オレンのみ、モモンのみ、シーヤのみ/)).toBeInTheDocument();
   });
 
   it("should have link to island detail page", () => {

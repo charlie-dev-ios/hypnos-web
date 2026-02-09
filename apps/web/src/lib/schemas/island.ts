@@ -19,7 +19,7 @@ export const IslandSchema = z.object({
 	id: z.number().int().positive(),
 	name: z.string().min(1),
 	description: z.string(),
-	specialtyBerry: z.string().min(1),
+	specialtyBerries: z.array(z.string().min(1)).min(1),
 	snorlaxRanks: z.array(SnorlaxRankSchema).length(35),
 	imageUrl: z.string().url().optional(),
 });

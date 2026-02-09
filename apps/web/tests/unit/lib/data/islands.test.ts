@@ -20,7 +20,7 @@ describe("getAllIslands", () => {
 		expect(islands[0]).toHaveProperty("id");
 		expect(islands[0]).toHaveProperty("name");
 		expect(islands[0]).toHaveProperty("description");
-		expect(islands[0]).toHaveProperty("specialtyBerry");
+		expect(islands[0]).toHaveProperty("specialtyBerries");
 		expect(islands[0]).toHaveProperty("snorlaxRanks");
 	});
 
@@ -78,7 +78,7 @@ describe("getIslandById", () => {
 	it("should return island with complete data structure", async () => {
 		const island = await getIslandById(1);
 
-		expect(island).toHaveProperty("specialtyBerry");
+		expect(island).toHaveProperty("specialtyBerries");
 		expect(island?.snorlaxRanks).toHaveLength(35);
 		expect(island?.snorlaxRanks[0]).toHaveProperty("rankTier");
 		expect(island?.snorlaxRanks[0]).toHaveProperty("rankNumber");

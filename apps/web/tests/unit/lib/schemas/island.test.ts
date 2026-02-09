@@ -37,7 +37,7 @@ const validIsland = {
 	id: 1,
 	name: "ワカクサ本島",
 	description: "最初に訪れるフィールド。",
-	specialtyBerry: "ランダム",
+	specialtyBerries: ["ランダム"],
 	snorlaxRanks: validSnorlaxRanks,
 };
 
@@ -202,8 +202,8 @@ describe("IslandSchema", () => {
 		expect(() => IslandSchema.parse(invalid)).toThrow();
 	});
 
-	it("should reject an island with empty specialtyBerry", () => {
-		const invalid = { ...validIsland, specialtyBerry: "" };
+	it("should reject an island with empty specialtyBerries", () => {
+		const invalid = { ...validIsland, specialtyBerries: [] };
 		expect(() => IslandSchema.parse(invalid)).toThrow();
 	});
 
