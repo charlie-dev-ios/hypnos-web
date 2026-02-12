@@ -4,7 +4,7 @@ import Breadcrumb from "@/components/navigation/breadcrumb";
 import { getAllIslands } from "@/lib/data/islands";
 
 export const metadata: Metadata = {
-  title: "島ガイド | ポケモンスリープ攻略サイト",
+  title: "フィールドガイド | ポケモンスリープ攻略サイト",
   description:
     "ポケモンスリープの全フィールド一覧。各フィールドのとくいきのみやカビゴン評価の情報を確認できます。",
 };
@@ -14,9 +14,9 @@ export default async function IslandsPage() {
 
   return (
     <div className="container mx-auto px-4 py-8">
-      <Breadcrumb items={[{ label: "島ガイド" }]} />
+      <Breadcrumb items={[{ label: "フィールドガイド" }]} />
 
-      <h1 className="text-4xl font-bold mb-8">島ガイド</h1>
+      <h1 className="text-4xl font-bold mb-8">フィールドガイド</h1>
 
       <IslandList islands={islands} />
     </div>

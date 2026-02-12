@@ -26,7 +26,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${island.name} | 島ガイド | ポケモンスリープ攻略サイト`,
+    title: `${island.name} | フィールドガイド | ポケモンスリープ攻略サイト`,
     description: `${island.name}の詳細情報。とくいきのみ: ${island.specialtyBerries.join("、")}。カビゴン評価ごとの必要エナジーと出現ポケモンを確認できます。`,
   };
 }
@@ -64,7 +64,7 @@ export default async function IslandDetailPage({
     <div className="container mx-auto px-4 py-8">
       <Breadcrumb
         items={[
-          { label: "島ガイド", href: "/islands" },
+          { label: "フィールドガイド", href: "/islands" },
           { label: island.name },
         ]}
       />
