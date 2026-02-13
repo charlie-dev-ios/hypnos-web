@@ -110,7 +110,7 @@ describe("Navigation Integration Tests", () => {
       render(page);
 
       expect(
-        screen.getByRole("heading", { name: "フィールドガイド", level: 1 }),
+        screen.getByRole("heading", { name: "フィールド", level: 1 }),
       ).toBeInTheDocument();
       expect(screen.getByText("ワカクサ本島")).toBeInTheDocument();
     });
