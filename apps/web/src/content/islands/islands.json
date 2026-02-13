@@ -1517,6 +1517,259 @@
           "newPokemonIds": []
         }
       ]
+    },
+    {
+      "id": 7,
+      "name": "アンバー渓谷",
+      "description": "琥珀色の渓谷が広がるフィールド。どくタイプやむしタイプ、ドラゴンタイプのポケモンが生息している。",
+      "specialtyBerries": ["カゴのみ", "ラムのみ", "ヤチェのみ"],
+      "snorlaxRanks": [
+        {
+          "rankTier": "ノーマル",
+          "rankNumber": 1,
+          "requiredEnergy": 0,
+          "dreamShards": 0,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "ノーマル",
+          "rankNumber": 2,
+          "requiredEnergy": 26478,
+          "dreamShards": 294,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "ノーマル",
+          "rankNumber": 3,
+          "requiredEnergy": 60899,
+          "dreamShards": 382,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "ノーマル",
+          "rankNumber": 4,
+          "requiredEnergy": 99293,
+          "dreamShards": 427,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "ノーマル",
+          "rankNumber": 5,
+          "requiredEnergy": 145629,
+          "dreamShards": 515,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "スーパー",
+          "rankNumber": 1,
+          "requiredEnergy": 198585,
+          "dreamShards": 588,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "スーパー",
+          "rankNumber": 2,
+          "requiredEnergy": 264456,
+          "dreamShards": 732,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "スーパー",
+          "rankNumber": 3,
+          "requiredEnergy": 344986,
+          "dreamShards": 895,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "スーパー",
+          "rankNumber": 4,
+          "requiredEnergy": 440123,
+          "dreamShards": 1057,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "スーパー",
+          "rankNumber": 5,
+          "requiredEnergy": 541880,
+          "dreamShards": 1131,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "ハイパー",
+          "rankNumber": 1,
+          "requiredEnergy": 654607,
+          "dreamShards": 1253,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "ハイパー",
+          "rankNumber": 2,
+          "requiredEnergy": 774923,
+          "dreamShards": 1337,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "ハイパー",
+          "rankNumber": 3,
+          "requiredEnergy": 900988,
+          "dreamShards": 1401,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "ハイパー",
+          "rankNumber": 4,
+          "requiredEnergy": 1033561,
+          "dreamShards": 1473,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "ハイパー",
+          "rankNumber": 5,
+          "requiredEnergy": 1176798,
+          "dreamShards": 1592,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 1,
+          "requiredEnergy": 1325740,
+          "dreamShards": 1655,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 2,
+          "requiredEnergy": 1485571,
+          "dreamShards": 1776,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 3,
+          "requiredEnergy": 1650692,
+          "dreamShards": 1835,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 4,
+          "requiredEnergy": 1828870,
+          "dreamShards": 1980,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 5,
+          "requiredEnergy": 2015408,
+          "dreamShards": 2073,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 6,
+          "requiredEnergy": 2215366,
+          "dreamShards": 2222,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 7,
+          "requiredEnergy": 2427642,
+          "dreamShards": 2359,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 8,
+          "requiredEnergy": 2655957,
+          "dreamShards": 2537,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 9,
+          "requiredEnergy": 2904897,
+          "dreamShards": 2766,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 10,
+          "requiredEnergy": 3179971,
+          "dreamShards": 3056,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 11,
+          "requiredEnergy": 3470704,
+          "dreamShards": 3230,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 12,
+          "requiredEnergy": 3774089,
+          "dreamShards": 3371,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 13,
+          "requiredEnergy": 4097770,
+          "dreamShards": 3596,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 14,
+          "requiredEnergy": 4430839,
+          "dreamShards": 3701,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 15,
+          "requiredEnergy": 4815792,
+          "dreamShards": 4277,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 16,
+          "requiredEnergy": 5236414,
+          "dreamShards": 4674,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 17,
+          "requiredEnergy": 5715237,
+          "dreamShards": 5320,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 18,
+          "requiredEnergy": 6304719,
+          "dreamShards": 6550,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 19,
+          "requiredEnergy": 7019168,
+          "dreamShards": 7938,
+          "newPokemonIds": []
+        },
+        {
+          "rankTier": "マスター",
+          "rankNumber": 20,
+          "requiredEnergy": 8528976,
+          "dreamShards": 16776,
+          "newPokemonIds": []
+        }
+      ]
     }
   ]
 }
