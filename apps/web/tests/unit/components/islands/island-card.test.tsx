@@ -18,7 +18,7 @@ function generateSnorlaxRanks(): Island["snorlaxRanks"] {
         rankNumber: i,
         requiredEnergy: ranks.length * 10000,
         dreamShards: ranks.length * 10,
-        newPokemonIds: [],
+        newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
       });
     }
   }

@@ -7,12 +7,22 @@ export const SnorlaxRankTierSchema = z.enum([
   "マスター",
 ]);
 
+export const SleepTypeSchema = z.enum(["うとうと", "すやすや", "ぐっすり"]);
+
+const pokemonIdArray = z.array(z.number().int().positive());
+
+export const NewPokemonBySleepTypeSchema = z.object({
+  うとうと: pokemonIdArray,
+  すやすや: pokemonIdArray,
+  ぐっすり: pokemonIdArray,
+});
+
 export const SnorlaxRankSchema = z.object({
   rankTier: SnorlaxRankTierSchema,
   rankNumber: z.number().int().positive(),
   requiredEnergy: z.number().int().nonnegative(),
   dreamShards: z.number().int().nonnegative(),
-  newPokemonIds: z.array(z.number().int().positive()),
+  newPokemon: NewPokemonBySleepTypeSchema,
 });
 
 export const IslandSchema = z.object({
@@ -24,6 +34,8 @@ export const IslandSchema = z.object({
   imageUrl: z.string().url().optional(),
 });
 
+export type SleepType = z.infer<typeof SleepTypeSchema>;
+export type NewPokemonBySleepType = z.infer<typeof NewPokemonBySleepTypeSchema>;
 export type SnorlaxRankTier = z.infer<typeof SnorlaxRankTierSchema>;
 export type SnorlaxRank = z.infer<typeof SnorlaxRankSchema>;
 export type Island = z.infer<typeof IslandSchema>;

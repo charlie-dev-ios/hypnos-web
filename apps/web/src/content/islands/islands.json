@@ -11,245 +11,245 @@
           "rankNumber": 1,
           "requiredEnergy": 0,
           "dreamShards": 0,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 2,
           "requiredEnergy": 3118,
           "dreamShards": 35,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 3,
           "requiredEnergy": 7171,
           "dreamShards": 45,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 4,
           "requiredEnergy": 11693,
           "dreamShards": 50,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 5,
           "requiredEnergy": 17149,
           "dreamShards": 61,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 1,
           "requiredEnergy": 23385,
           "dreamShards": 69,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 2,
           "requiredEnergy": 31492,
           "dreamShards": 90,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 3,
           "requiredEnergy": 41314,
           "dreamShards": 109,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 4,
           "requiredEnergy": 53006,
           "dreamShards": 130,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 5,
           "requiredEnergy": 65634,
           "dreamShards": 140,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 1,
           "requiredEnergy": 79197,
           "dreamShards": 151,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 2,
           "requiredEnergy": 93540,
           "dreamShards": 159,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 3,
           "requiredEnergy": 109130,
           "dreamShards": 173,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 4,
           "requiredEnergy": 125032,
           "dreamShards": 177,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 5,
           "requiredEnergy": 156121,
           "dreamShards": 345,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 1,
           "requiredEnergy": 187832,
           "dreamShards": 352,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 2,
           "requiredEnergy": 220177,
           "dreamShards": 359,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 3,
           "requiredEnergy": 253169,
           "dreamShards": 367,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 4,
           "requiredEnergy": 286821,
           "dreamShards": 374,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 5,
           "requiredEnergy": 321146,
           "dreamShards": 381,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 6,
           "requiredEnergy": 356158,
           "dreamShards": 389,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 7,
           "requiredEnergy": 391870,
           "dreamShards": 397,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 8,
           "requiredEnergy": 428296,
           "dreamShards": 405,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 9,
           "requiredEnergy": 465451,
           "dreamShards": 413,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 10,
           "requiredEnergy": 532707,
           "dreamShards": 747,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 11,
           "requiredEnergy": 601308,
           "dreamShards": 762,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 12,
           "requiredEnergy": 742056,
           "dreamShards": 1564,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 13,
           "requiredEnergy": 885619,
           "dreamShards": 1595,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 14,
           "requiredEnergy": 1029700,
           "dreamShards": 1601,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 15,
           "requiredEnergy": 1199506,
           "dreamShards": 1887,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 16,
           "requiredEnergy": 1486800,
           "dreamShards": 3192,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 17,
           "requiredEnergy": 1795052,
           "dreamShards": 3425,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 18,
           "requiredEnergy": 2165541,
           "dreamShards": 4117,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 19,
           "requiredEnergy": 2604280,
           "dreamShards": 4875,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 20,
           "requiredEnergy": 3245795,
           "dreamShards": 7128,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         }
       ]
     },
@@ -264,245 +264,245 @@
           "rankNumber": 1,
           "requiredEnergy": 0,
           "dreamShards": 0,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 2,
           "requiredEnergy": 4822,
           "dreamShards": 54,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 3,
           "requiredEnergy": 11090,
           "dreamShards": 70,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 4,
           "requiredEnergy": 18082,
           "dreamShards": 78,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 5,
           "requiredEnergy": 26520,
           "dreamShards": 94,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 1,
           "requiredEnergy": 36164,
           "dreamShards": 107,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 2,
           "requiredEnergy": 48700,
           "dreamShards": 139,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 3,
           "requiredEnergy": 63889,
           "dreamShards": 169,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 4,
           "requiredEnergy": 81971,
           "dreamShards": 201,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 5,
           "requiredEnergy": 101499,
           "dreamShards": 217,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 1,
           "requiredEnergy": 122474,
           "dreamShards": 233,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 2,
           "requiredEnergy": 144654,
           "dreamShards": 246,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 3,
           "requiredEnergy": 168763,
           "dreamShards": 268,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 4,
           "requiredEnergy": 195283,
           "dreamShards": 295,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 5,
           "requiredEnergy": 224455,
           "dreamShards": 324,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 1,
           "requiredEnergy": 256544,
           "dreamShards": 357,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 2,
           "requiredEnergy": 291842,
           "dreamShards": 392,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 3,
           "requiredEnergy": 330670,
           "dreamShards": 431,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 4,
           "requiredEnergy": 373381,
           "dreamShards": 475,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 5,
           "requiredEnergy": 420363,
           "dreamShards": 522,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 6,
           "requiredEnergy": 472043,
           "dreamShards": 574,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 7,
           "requiredEnergy": 528891,
           "dreamShards": 632,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 8,
           "requiredEnergy": 591424,
           "dreamShards": 695,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 9,
           "requiredEnergy": 660210,
           "dreamShards": 764,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 10,
           "requiredEnergy": 735875,
           "dreamShards": 841,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 11,
           "requiredEnergy": 819107,
           "dreamShards": 925,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 12,
           "requiredEnergy": 910662,
           "dreamShards": 1017,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 13,
           "requiredEnergy": 1018462,
           "dreamShards": 1198,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 14,
           "requiredEnergy": 1184155,
           "dreamShards": 1841,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 15,
           "requiredEnergy": 1379432,
           "dreamShards": 2170,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 16,
           "requiredEnergy": 1709820,
           "dreamShards": 3671,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 17,
           "requiredEnergy": 2064310,
           "dreamShards": 3939,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 18,
           "requiredEnergy": 2490372,
           "dreamShards": 4734,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 19,
           "requiredEnergy": 2994922,
           "dreamShards": 5606,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 20,
           "requiredEnergy": 3732644,
           "dreamShards": 8197,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         }
       ]
     },
@@ -517,245 +517,245 @@
           "rankNumber": 1,
           "requiredEnergy": 0,
           "dreamShards": 0,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 2,
           "requiredEnergy": 6885,
           "dreamShards": 77,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 3,
           "requiredEnergy": 15835,
           "dreamShards": 99,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 4,
           "requiredEnergy": 25817,
           "dreamShards": 111,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 5,
           "requiredEnergy": 37865,
           "dreamShards": 134,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 1,
           "requiredEnergy": 51635,
           "dreamShards": 153,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 2,
           "requiredEnergy": 69534,
           "dreamShards": 199,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 3,
           "requiredEnergy": 91221,
           "dreamShards": 241,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 4,
           "requiredEnergy": 117038,
           "dreamShards": 287,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 5,
           "requiredEnergy": 144921,
           "dreamShards": 310,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 1,
           "requiredEnergy": 174869,
           "dreamShards": 333,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 2,
           "requiredEnergy": 206538,
           "dreamShards": 352,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 3,
           "requiredEnergy": 240961,
           "dreamShards": 382,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 4,
           "requiredEnergy": 278826,
           "dreamShards": 421,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 5,
           "requiredEnergy": 320478,
           "dreamShards": 463,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 1,
           "requiredEnergy": 366295,
           "dreamShards": 509,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 2,
           "requiredEnergy": 416694,
           "dreamShards": 560,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 3,
           "requiredEnergy": 472133,
           "dreamShards": 616,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 4,
           "requiredEnergy": 533116,
           "dreamShards": 678,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 5,
           "requiredEnergy": 600197,
           "dreamShards": 745,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 6,
           "requiredEnergy": 673986,
           "dreamShards": 820,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 7,
           "requiredEnergy": 755154,
           "dreamShards": 902,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 8,
           "requiredEnergy": 844439,
           "dreamShards": 992,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 9,
           "requiredEnergy": 942653,
           "dreamShards": 1091,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 10,
           "requiredEnergy": 1050688,
           "dreamShards": 1200,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 11,
           "requiredEnergy": 1169527,
           "dreamShards": 1320,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 12,
           "requiredEnergy": 1300250,
           "dreamShards": 1452,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 13,
           "requiredEnergy": 1444045,
           "dreamShards": 1598,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 14,
           "requiredEnergy": 1602220,
           "dreamShards": 1758,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 15,
           "requiredEnergy": 1776213,
           "dreamShards": 1933,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 16,
           "requiredEnergy": 1967605,
           "dreamShards": 2127,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 17,
           "requiredEnergy": 2333568,
           "dreamShards": 4066,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 18,
           "requiredEnergy": 2815203,
           "dreamShards": 5352,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 19,
           "requiredEnergy": 3385564,
           "dreamShards": 6337,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 20,
           "requiredEnergy": 4219534,
           "dreamShards": 9266,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         }
       ]
     },
@@ -770,245 +770,245 @@
           "rankNumber": 1,
           "requiredEnergy": 0,
           "dreamShards": 0,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 2,
           "requiredEnergy": 10486,
           "dreamShards": 117,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 3,
           "requiredEnergy": 24118,
           "dreamShards": 151,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 4,
           "requiredEnergy": 39323,
           "dreamShards": 169,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 5,
           "requiredEnergy": 57673,
           "dreamShards": 204,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 1,
           "requiredEnergy": 78645,
           "dreamShards": 233,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 2,
           "requiredEnergy": 105909,
           "dreamShards": 303,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 3,
           "requiredEnergy": 138940,
           "dreamShards": 367,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 4,
           "requiredEnergy": 178262,
           "dreamShards": 437,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 5,
           "requiredEnergy": 220730,
           "dreamShards": 472,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 1,
           "requiredEnergy": 266344,
           "dreamShards": 507,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 2,
           "requiredEnergy": 314580,
           "dreamShards": 536,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 3,
           "requiredEnergy": 367010,
           "dreamShards": 583,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 4,
           "requiredEnergy": 424683,
           "dreamShards": 641,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 5,
           "requiredEnergy": 488123,
           "dreamShards": 705,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 1,
           "requiredEnergy": 557907,
           "dreamShards": 775,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 2,
           "requiredEnergy": 634669,
           "dreamShards": 853,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 3,
           "requiredEnergy": 719107,
           "dreamShards": 938,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 4,
           "requiredEnergy": 811989,
           "dreamShards": 1032,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 5,
           "requiredEnergy": 914159,
           "dreamShards": 1135,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 6,
           "requiredEnergy": 1026546,
           "dreamShards": 1249,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 7,
           "requiredEnergy": 1150172,
           "dreamShards": 1374,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 8,
           "requiredEnergy": 1286161,
           "dreamShards": 1511,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 9,
           "requiredEnergy": 1435749,
           "dreamShards": 1662,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 10,
           "requiredEnergy": 1600296,
           "dreamShards": 1828,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 11,
           "requiredEnergy": 1781298,
           "dreamShards": 2011,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 12,
           "requiredEnergy": 1980400,
           "dreamShards": 2212,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 13,
           "requiredEnergy": 2199412,
           "dreamShards": 2433,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 14,
           "requiredEnergy": 2440325,
           "dreamShards": 2677,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 15,
           "requiredEnergy": 2705329,
           "dreamShards": 2944,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 16,
           "requiredEnergy": 2996833,
           "dreamShards": 3239,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 17,
           "requiredEnergy": 3317487,
           "dreamShards": 3563,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 18,
           "requiredEnergy": 3670206,
           "dreamShards": 3919,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 19,
           "requiredEnergy": 4058197,
           "dreamShards": 4311,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 20,
           "requiredEnergy": 4706403,
           "dreamShards": 7202,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         }
       ]
     },
@@ -1023,245 +1023,245 @@
           "rankNumber": 1,
           "requiredEnergy": 0,
           "dreamShards": 0,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 2,
           "requiredEnergy": 12938,
           "dreamShards": 144,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 3,
           "requiredEnergy": 29756,
           "dreamShards": 187,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 4,
           "requiredEnergy": 48515,
           "dreamShards": 208,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 5,
           "requiredEnergy": 71156,
           "dreamShards": 252,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 1,
           "requiredEnergy": 97031,
           "dreamShards": 288,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 2,
           "requiredEnergy": 130668,
           "dreamShards": 374,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 3,
           "requiredEnergy": 171420,
           "dreamShards": 453,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 4,
           "requiredEnergy": 219936,
           "dreamShards": 539,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 5,
           "requiredEnergy": 272333,
           "dreamShards": 582,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 1,
           "requiredEnergy": 328610,
           "dreamShards": 625,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 2,
           "requiredEnergy": 388122,
           "dreamShards": 661,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 3,
           "requiredEnergy": 452809,
           "dreamShards": 719,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 4,
           "requiredEnergy": 522025,
           "dreamShards": 769,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 5,
           "requiredEnergy": 596086,
           "dreamShards": 823,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 1,
           "requiredEnergy": 675330,
           "dreamShards": 880,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 2,
           "requiredEnergy": 760123,
           "dreamShards": 942,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 3,
           "requiredEnergy": 850852,
           "dreamShards": 1008,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 4,
           "requiredEnergy": 958702,
           "dreamShards": 1198,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 5,
           "requiredEnergy": 1075709,
           "dreamShards": 1300,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 6,
           "requiredEnergy": 1202596,
           "dreamShards": 1410,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 7,
           "requiredEnergy": 1340143,
           "dreamShards": 1528,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 8,
           "requiredEnergy": 1489190,
           "dreamShards": 1656,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 9,
           "requiredEnergy": 1650645,
           "dreamShards": 1794,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 10,
           "requiredEnergy": 1825483,
           "dreamShards": 1943,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 11,
           "requiredEnergy": 2014758,
           "dreamShards": 2103,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 12,
           "requiredEnergy": 2219603,
           "dreamShards": 2276,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 13,
           "requiredEnergy": 2441243,
           "dreamShards": 2463,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 14,
           "requiredEnergy": 2680993,
           "dreamShards": 2664,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 15,
           "requiredEnergy": 2925574,
           "dreamShards": 2718,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 16,
           "requiredEnergy": 3188730,
           "dreamShards": 2924,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 17,
           "requiredEnergy": 3454577,
           "dreamShards": 2954,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 18,
           "requiredEnergy": 3739033,
           "dreamShards": 3161,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 19,
           "requiredEnergy": 4166848,
           "dreamShards": 4754,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 20,
           "requiredEnergy": 5193272,
           "dreamShards": 11405,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         }
       ]
     },
@@ -1276,245 +1276,245 @@
           "rankNumber": 1,
           "requiredEnergy": 0,
           "dreamShards": 0,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 2,
           "requiredEnergy": 20142,
           "dreamShards": 224,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 3,
           "requiredEnergy": 46326,
           "dreamShards": 291,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 4,
           "requiredEnergy": 75531,
           "dreamShards": 325,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 5,
           "requiredEnergy": 110779,
           "dreamShards": 392,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 1,
           "requiredEnergy": 151061,
           "dreamShards": 448,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 2,
           "requiredEnergy": 203429,
           "dreamShards": 582,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 3,
           "requiredEnergy": 266875,
           "dreamShards": 705,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 4,
           "requiredEnergy": 342406,
           "dreamShards": 839,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 5,
           "requiredEnergy": 423979,
           "dreamShards": 906,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 1,
           "requiredEnergy": 511595,
           "dreamShards": 974,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 2,
           "requiredEnergy": 604246,
           "dreamShards": 1029,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 3,
           "requiredEnergy": 704953,
           "dreamShards": 1119,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 4,
           "requiredEnergy": 810696,
           "dreamShards": 1175,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 5,
           "requiredEnergy": 921725,
           "dreamShards": 1234,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 1,
           "requiredEnergy": 1038306,
           "dreamShards": 1295,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 2,
           "requiredEnergy": 1160717,
           "dreamShards": 1360,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 3,
           "requiredEnergy": 1289248,
           "dreamShards": 1428,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 4,
           "requiredEnergy": 1431702,
           "dreamShards": 1583,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 5,
           "requiredEnergy": 1582395,
           "dreamShards": 1674,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 6,
           "requiredEnergy": 1741777,
           "dreamShards": 1771,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 7,
           "requiredEnergy": 1910321,
           "dreamShards": 1873,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 8,
           "requiredEnergy": 2088527,
           "dreamShards": 1980,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 9,
           "requiredEnergy": 2276921,
           "dreamShards": 2093,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 10,
           "requiredEnergy": 2476059,
           "dreamShards": 2213,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 11,
           "requiredEnergy": 2686523,
           "dreamShards": 2338,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 12,
           "requiredEnergy": 2908932,
           "dreamShards": 2471,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 13,
           "requiredEnergy": 3143935,
           "dreamShards": 2611,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 14,
           "requiredEnergy": 3442846,
           "dreamShards": 3321,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 15,
           "requiredEnergy": 3744954,
           "dreamShards": 3357,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 16,
           "requiredEnergy": 4086475,
           "dreamShards": 3795,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 17,
           "requiredEnergy": 4451914,
           "dreamShards": 4060,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 18,
           "requiredEnergy": 4909073,
           "dreamShards": 5080,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 19,
           "requiredEnergy": 5472793,
           "dreamShards": 6264,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 20,
           "requiredEnergy": 6674166,
           "dreamShards": 13349,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         }
       ]
     },
@@ -1529,245 +1529,245 @@
           "rankNumber": 1,
           "requiredEnergy": 0,
           "dreamShards": 0,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 2,
           "requiredEnergy": 26478,
           "dreamShards": 294,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 3,
           "requiredEnergy": 60899,
           "dreamShards": 382,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 4,
           "requiredEnergy": 99293,
           "dreamShards": 427,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ノーマル",
           "rankNumber": 5,
           "requiredEnergy": 145629,
           "dreamShards": 515,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 1,
           "requiredEnergy": 198585,
           "dreamShards": 588,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 2,
           "requiredEnergy": 264456,
           "dreamShards": 732,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 3,
           "requiredEnergy": 344986,
           "dreamShards": 895,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 4,
           "requiredEnergy": 440123,
           "dreamShards": 1057,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "スーパー",
           "rankNumber": 5,
           "requiredEnergy": 541880,
           "dreamShards": 1131,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 1,
           "requiredEnergy": 654607,
           "dreamShards": 1253,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 2,
           "requiredEnergy": 774923,
           "dreamShards": 1337,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 3,
           "requiredEnergy": 900988,
           "dreamShards": 1401,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 4,
           "requiredEnergy": 1033561,
           "dreamShards": 1473,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "ハイパー",
           "rankNumber": 5,
           "requiredEnergy": 1176798,
           "dreamShards": 1592,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 1,
           "requiredEnergy": 1325740,
           "dreamShards": 1655,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 2,
           "requiredEnergy": 1485571,
           "dreamShards": 1776,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 3,
           "requiredEnergy": 1650692,
           "dreamShards": 1835,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 4,
           "requiredEnergy": 1828870,
           "dreamShards": 1980,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 5,
           "requiredEnergy": 2015408,
           "dreamShards": 2073,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 6,
           "requiredEnergy": 2215366,
           "dreamShards": 2222,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 7,
           "requiredEnergy": 2427642,
           "dreamShards": 2359,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 8,
           "requiredEnergy": 2655957,
           "dreamShards": 2537,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 9,
           "requiredEnergy": 2904897,
           "dreamShards": 2766,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 10,
           "requiredEnergy": 3179971,
           "dreamShards": 3056,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 11,
           "requiredEnergy": 3470704,
           "dreamShards": 3230,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 12,
           "requiredEnergy": 3774089,
           "dreamShards": 3371,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 13,
           "requiredEnergy": 4097770,
           "dreamShards": 3596,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 14,
           "requiredEnergy": 4430839,
           "dreamShards": 3701,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 15,
           "requiredEnergy": 4815792,
           "dreamShards": 4277,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 16,
           "requiredEnergy": 5236414,
           "dreamShards": 4674,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 17,
           "requiredEnergy": 5715237,
           "dreamShards": 5320,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 18,
           "requiredEnergy": 6304719,
           "dreamShards": 6550,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 19,
           "requiredEnergy": 7019168,
           "dreamShards": 7938,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         },
         {
           "rankTier": "マスター",
           "rankNumber": 20,
           "requiredEnergy": 8528976,
           "dreamShards": 16776,
-          "newPokemonIds": []
+          "newPokemon": { "うとうと": [], "すやすや": [], "ぐっすり": [] }
         }
       ]
     }

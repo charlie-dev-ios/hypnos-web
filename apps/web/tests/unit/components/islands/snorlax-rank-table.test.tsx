@@ -9,21 +9,21 @@ const mockRanks: SnorlaxRank[] = [
     rankNumber: 1,
     requiredEnergy: 0,
     dreamShards: 24,
-    newPokemonIds: [],
+    newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
   },
   {
     rankTier: "ノーマル",
     rankNumber: 2,
     requiredEnergy: 3118,
     dreamShards: 35,
-    newPokemonIds: [],
+    newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
   },
   {
     rankTier: "スーパー",
     rankNumber: 1,
     requiredEnergy: 23385,
     dreamShards: 69,
-    newPokemonIds: [],
+    newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
   },
 ];
 
