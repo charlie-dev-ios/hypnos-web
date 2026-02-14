@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+import CollapsibleSection from "@/components/islands/collapsible-section";
 import RankPokemonList from "@/components/islands/rank-pokemon-list";
 import SnorlaxRankTable from "@/components/islands/snorlax-rank-table";
 import Breadcrumb from "@/components/navigation/breadcrumb";
@@ -26,7 +27,7 @@ export async function generateMetadata({
   }
 
   return {
-    title: `${island.name} | 島ガイド | ポケモンスリープ攻略サイト`,
+    title: `${island.name} | フィールド | ポケモンスリープ攻略サイト`,
     description: `${island.name}の詳細情報。とくいきのみ: ${island.specialtyBerries.join("、")}。カビゴン評価ごとの必要エナジーと出現ポケモンを確認できます。`,
   };
 }
@@ -64,7 +65,7 @@ export default async function IslandDetailPage({
     <div className="container mx-auto px-4 py-8">
       <Breadcrumb
         items={[
-          { label: "島ガイド", href: "/islands" },
+          { label: "フィールド", href: "/islands" },
           { label: island.name },
         ]}
       />
@@ -83,16 +84,18 @@ export default async function IslandDetailPage({
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-4">カビゴン評価</h2>
-          <SnorlaxRankTable ranks={island.snorlaxRanks} />
+          <CollapsibleSection title="出現ポケモン">
+            <RankPokemonList
+              ranks={island.snorlaxRanks}
+              pokemonMap={pokemonMap}
+            />
+          </CollapsibleSection>
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-4">出現ポケモン</h2>
-          <RankPokemonList
-            ranks={island.snorlaxRanks}
-            pokemonMap={pokemonMap}
-          />
+          <CollapsibleSection title="カビゴン評価">
+            <SnorlaxRankTable ranks={island.snorlaxRanks} />
+          </CollapsibleSection>
         </section>
       </div>
     </div>

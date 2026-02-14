@@ -3,27 +3,29 @@ import { describe, expect, it } from "vitest";
 import RankPokemonList from "@/components/islands/rank-pokemon-list";
 import type { SnorlaxRank } from "@/lib/schemas/island";
 
+const emptyPokemon = { うとうと: [], すやすや: [], ぐっすり: [] };
+
 const mockRanks: SnorlaxRank[] = [
   {
     rankTier: "ノーマル",
     rankNumber: 1,
     requiredEnergy: 0,
     dreamShards: 0,
-    newPokemonIds: [172, 25],
+    newPokemon: { うとうと: [172], すやすや: [25], ぐっすり: [] },
   },
   {
     rankTier: "ノーマル",
     rankNumber: 2,
     requiredEnergy: 3118,
     dreamShards: 35,
-    newPokemonIds: [39],
+    newPokemon: { うとうと: [], すやすや: [39], ぐっすり: [] },
   },
   {
     rankTier: "スーパー",
     rankNumber: 1,
     requiredEnergy: 23385,
     dreamShards: 69,
-    newPokemonIds: [],
+    newPokemon: emptyPokemon,
   },
 ];
 
@@ -65,6 +67,14 @@ describe("RankPokemonList", () => {
     render(<RankPokemonList ranks={mockRanks} pokemonMap={mockPokemonMap} />);
 
     const noneTexts = screen.getAllByText("なし");
-    expect(noneTexts.length).toBe(1); // スーパー 1 only
+    expect(noneTexts).toHaveLength(1); // スーパー 1 only
+  });
+
+  it("should render sleep type column headers for ranks with pokemon", () => {
+    render(<RankPokemonList ranks={mockRanks} pokemonMap={mockPokemonMap} />);
+
+    expect(screen.getAllByText("うとうと").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("すやすや").length).toBeGreaterThan(0);
+    expect(screen.getAllByText("ぐっすり").length).toBeGreaterThan(0);
   });
 });

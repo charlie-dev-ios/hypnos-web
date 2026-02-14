@@ -84,7 +84,7 @@ describe("getIslandById", () => {
     expect(island?.snorlaxRanks[0]).toHaveProperty("rankNumber");
     expect(island?.snorlaxRanks[0]).toHaveProperty("requiredEnergy");
     expect(island?.snorlaxRanks[0]).toHaveProperty("dreamShards");
-    expect(island?.snorlaxRanks[0]).toHaveProperty("newPokemonIds");
+    expect(island?.snorlaxRanks[0]).toHaveProperty("newPokemon");
   });
 });
 

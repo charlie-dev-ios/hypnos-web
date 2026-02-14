@@ -22,7 +22,7 @@ function generateValidSnorlaxRanks() {
         rankNumber: i,
         requiredEnergy: energy,
         dreamShards: shards,
-        newPokemonIds: [],
+        newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
       });
       energy += 10000;
       shards += 50;
@@ -68,24 +68,28 @@ describe("SnorlaxRankSchema", () => {
       rankNumber: 1,
       requiredEnergy: 0,
       dreamShards: 0,
-      newPokemonIds: [],
+      newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
     };
 
     const result = SnorlaxRankSchema.parse(validRank);
     expect(result).toEqual(validRank);
   });
 
-  it("should accept rank with newPokemonIds", () => {
+  it("should accept rank with newPokemon by sleep type", () => {
     const rank = {
       rankTier: "ノーマル",
       rankNumber: 2,
       requiredEnergy: 3118,
       dreamShards: 35,
-      newPokemonIds: [1, 4, 7],
+      newPokemon: { うとうと: [1], すやすや: [4], ぐっすり: [7] },
     };
 
     const result = SnorlaxRankSchema.parse(rank);
-    expect(result.newPokemonIds).toEqual([1, 4, 7]);
+    expect(result.newPokemon).toEqual({
+      うとうと: [1],
+      すやすや: [4],
+      ぐっすり: [7],
+    });
   });
 
   it("should accept zero required energy and zero dreamShards", () => {
@@ -94,7 +98,7 @@ describe("SnorlaxRankSchema", () => {
       rankNumber: 1,
       requiredEnergy: 0,
       dreamShards: 0,
-      newPokemonIds: [],
+      newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
     };
 
     const result = SnorlaxRankSchema.parse(rank);
@@ -102,17 +106,21 @@ describe("SnorlaxRankSchema", () => {
     expect(result.dreamShards).toBe(0);
   });
 
-  it("should accept empty newPokemonIds array", () => {
+  it("should accept empty newPokemon arrays", () => {
     const rank = {
       rankTier: "スーパー",
       rankNumber: 3,
       requiredEnergy: 41314,
       dreamShards: 109,
-      newPokemonIds: [],
+      newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
     };
 
     const result = SnorlaxRankSchema.parse(rank);
-    expect(result.newPokemonIds).toEqual([]);
+    expect(result.newPokemon).toEqual({
+      うとうと: [],
+      すやすや: [],
+      ぐっすり: [],
+    });
   });
 
   it("should reject negative required energy", () => {
@@ -121,7 +129,7 @@ describe("SnorlaxRankSchema", () => {
       rankNumber: 1,
       requiredEnergy: -1,
       dreamShards: 0,
-      newPokemonIds: [],
+      newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
     };
 
     expect(() => SnorlaxRankSchema.parse(invalidRank)).toThrow();
@@ -133,19 +141,19 @@ describe("SnorlaxRankSchema", () => {
       rankNumber: 1,
       requiredEnergy: 0,
       dreamShards: -1,
-      newPokemonIds: [],
+      newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
     };
 
     expect(() => SnorlaxRankSchema.parse(invalidRank)).toThrow();
   });
 
-  it("should reject non-positive pokemon IDs", () => {
+  it("should reject non-positive pokemon IDs in newPokemon", () => {
     const invalidRank = {
       rankTier: "ノーマル",
       rankNumber: 1,
       requiredEnergy: 0,
       dreamShards: 0,
-      newPokemonIds: [0],
+      newPokemon: { うとうと: [0], すやすや: [], ぐっすり: [] },
     };
 
     expect(() => SnorlaxRankSchema.parse(invalidRank)).toThrow();
@@ -157,7 +165,7 @@ describe("SnorlaxRankSchema", () => {
       rankNumber: 1,
       requiredEnergy: 0,
       dreamShards: 0,
-      newPokemonIds: [],
+      newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
     };
 
     expect(() => SnorlaxRankSchema.parse(invalidRank)).toThrow();
@@ -169,7 +177,7 @@ describe("SnorlaxRankSchema", () => {
       rankNumber: 0,
       requiredEnergy: 0,
       dreamShards: 0,
-      newPokemonIds: [],
+      newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
     };
 
     expect(() => SnorlaxRankSchema.parse(invalidRank)).toThrow();
@@ -221,7 +229,7 @@ describe("IslandSchema", () => {
       rankNumber: 1,
       requiredEnergy: 999999,
       dreamShards: 0,
-      newPokemonIds: [],
+      newPokemon: { うとうと: [], すやすや: [], ぐっすり: [] },
     };
     const tooMany = [...validSnorlaxRanks, extraRank];
     const invalid = { ...validIsland, snorlaxRanks: tooMany };
